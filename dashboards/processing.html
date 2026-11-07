@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transaction Types &amp; Processing · Payments Analytics</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+<main>
+  <div class="top">
+    <div>
+      <h1>Transaction Types &amp; Processing Costs</h1>
+      <div class="sub" id="sub"></div>
+    </div>
+    <div class="filters">
+      <label>Period <select id="period"></select></label>
+      <label>Card type <select id="card"></select></label>
+    </div>
+  </div>
+
+  <section class="grid kpis" id="kpis"></section>
+
+  <section class="grid row">
+    <div class="panel c7">
+      <h2>Transaction types <span>selected period</span></h2>
+      <div class="scroll"><table id="typeTable"></table></div>
+    </div>
+    <div class="panel c5">
+      <h2>Amount share by transaction type <span>UZS</span></h2>
+      <div class="donut-wrap"><div class="chart" id="typeDonut"></div><div class="donut-list" id="typeList"></div></div>
+    </div>
+  </section>
+
+  <section class="grid row">
+    <div class="panel c6">
+      <h2>Monthly amount by transaction type <span>UZS, H1 2026</span></h2>
+      <div class="legend" id="typeLegend"></div>
+      <div class="chart" id="typeMonthly"></div>
+    </div>
+    <div class="panel c6">
+      <h2>Commission income vs processing cost <span>UZS, by month</span></h2>
+      <div class="legend" id="pnlLegend"></div>
+      <div class="chart" id="pnl"></div>
+    </div>
+  </section>
+
+  <section class="grid row">
+    <div class="panel c8">
+      <h2>Processing cost by acquiring bank <span>UZS, selected period</span></h2>
+      <div class="scroll"><table id="bankTable"></table></div>
+    </div>
+    <div class="panel c4">
+      <h2>Cost structure by card type <span>UZS</span></h2>
+      <div class="donut-wrap"><div class="chart" id="costDonut"></div><div class="donut-list" id="costList"></div></div>
+    </div>
+  </section>
+</main>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script>
+const { D, COLORS, PALETTE, nf, short, pct, mlabel, periodRange, comparison, inRange, daysIn, delta, Charts, legend, sumTx } = App;
+App.layout("processing.html");
+
+const state = { period: "all", card: -1 };
+App.periodSelect(document.getElementById("period"), (v) => { state.period = v; render(); });
+const cardSel = document.getElementById("card");
+cardSel.innerHTML = `<option value="-1">All card types</option>` + D.cards.map((c, i) => `<option value="${i}">${c}</option>`).join("");
+cardSel.addEventListener("change", () => { state.card = +cardSel.value; render(); });
+
+const TYPE_COLORS = Object.fromEntries(D.types.map((t, i) => [t, PALETTE[i]]));
+const label = (t) => t.replace("_", "-").replace(/\B\w+/g, (s) => s.toLowerCase()).replace("P2p", "P2P");
+const cardOk = (c) => state.card < 0 || c === state.card;
+
+// months covered by a date range (cost data is monthly)
+const monthsOf = (r) => D.months.map((m, i) => [m, i]).filter(([m]) => {
+  const pr = periodRange(m); return pr.from <= r.to && pr.to >= r.from; }).map(([, i]) => i);
+function costSum(monthIdx, pred = () => true) {
+  let s = 0;
+  for (const r of D.cost) if (monthIdx.includes(r[0]) && cardOk(r[2]) && pred(r)) s += r[3];
+  return s;
+}
+
+function kpi(label, value, unit, deltaHtml, cmpLabel) {
+  return `<div class="panel kpi"><div class="label">${label}</div>
+    <div class="value">${value}<span class="unit">${unit || ""}</span></div>
+    <div class="delta">${deltaHtml || "&nbsp;"}${deltaHtml ? `<em>${cmpLabel}</em>` : ""}</div></div>`;
+}
+
+function render() {
+  const range = periodRange(state.period);
+  const cmp = comparison(state.period);
+  const pd = cmp ? [daysIn(cmp.cur), daysIn(cmp.prev)] : null;
+  const months = monthsOf(range);
+
+  document.getElementById("sub").textContent =
+    `${range.label} · ${state.card < 0 ? "All card types" : D.cards[state.card]} · synthetic data, amounts in UZS`;
+
+  const tot = sumTx((r) => inRange(r[0], range) && cardOk(r[1]));
+  const cost = costSum(months);
+  const types = D.types.map((t, i) => ({ t, i, ...sumTx((r) => r[2] === i && inRange(r[0], range) && cardOk(r[1])) }));
+  const byType = (name) => types.find((x) => x.t === name);
+
+  let k = { curCost: null, prevCost: null, cur: null, prev: null };
+  if (cmp) {
+    k.cur = sumTx((r) => inRange(r[0], cmp.cur) && cardOk(r[1]));
+    k.prev = sumTx((r) => inRange(r[0], cmp.prev) && cardOk(r[1]));
+    k.curCost = costSum(monthsOf(cmp.cur)); k.prevCost = costSum(monthsOf(cmp.prev));
+  }
+  const margin = tot.commission - cost;
+  document.getElementById("kpis").innerHTML = [
+    kpi("Processing cost", short(cost, 1), " UZS", cmp && delta(k.curCost, k.prevCost, { invert: true, perDay: pd }), cmp?.label),
+    kpi("Cost / amount", nf((cost / tot.amount) * 100, 3), "%", cmp && delta(k.curCost / k.cur.amount, k.prevCost / k.prev.amount, { invert: true }), cmp?.label),
+    kpi("Cost per transaction", nf(cost / tot.count, 0), " UZS", cmp && delta(k.curCost / k.cur.count, k.prevCost / k.prev.count, { invert: true }), cmp?.label),
+    kpi("Net fee margin", short(margin, 1), " UZS", cmp && delta(k.cur.commission - k.curCost, k.prev.commission - k.prevCost, { perDay: pd }), cmp?.label),
+    kpi("Purchase share", pct((byType("PURCHASE").amount / tot.amount) * 100), "", "", ""),
+    kpi("P2P amount", short(byType("P2P").amount, 1), " UZS", cmp && delta(
+      sumTx((r) => r[2] === 1 && inRange(r[0], cmp.cur) && cardOk(r[1])).amount,
+      sumTx((r) => r[2] === 1 && inRange(r[0], cmp.prev) && cardOk(r[1])).amount, { perDay: pd }), cmp?.label),
+  ].join("");
+
+  // type table with trend vs comparison period
+  const maxAmt = Math.max(...types.map((x) => x.amount));
+  document.getElementById("typeTable").innerHTML = `
+    <thead><tr><th>Type</th><th>Transactions</th><th>Share</th><th>Amount (UZS)</th><th>Share</th><th>Avg ticket</th>
+      ${cmp ? `<th>Trend ${cmp.label}</th>` : ""}</tr></thead>
+    <tbody>${types.map((x) => `<tr>
+      <td><i class="swatch" style="background:${TYPE_COLORS[x.t]}"></i>${label(x.t)}</td>
+      <td>${nf(x.count)}</td><td>${pct((x.count / tot.count) * 100)}</td>
+      <td><div class="bar-cell"><span style="width:${(x.amount / maxAmt) * 70}px;background:${TYPE_COLORS[x.t]}55"></span>${short(x.amount, 1)}</div></td>
+      <td>${pct((x.amount / tot.amount) * 100)}</td><td>${nf(x.amount / x.count / 1000, 1)}K</td>
+      ${cmp ? `<td>${delta(sumTx((r) => r[2] === x.i && inRange(r[0], cmp.cur) && cardOk(r[1])).amount,
+        sumTx((r) => r[2] === x.i && inRange(r[0], cmp.prev) && cardOk(r[1])).amount, { perDay: pd })}</td>` : ""}
+    </tr>`).join("")}</tbody>
+    <tfoot><tr><td>Total</td><td>${nf(tot.count)}</td><td>100%</td><td>${short(tot.amount, 1)}</td><td>100%</td>
+      <td>${nf(tot.amount / tot.count / 1000, 1)}K</td>${cmp ? "<td></td>" : ""}</tr></tfoot>`;
+
+  Charts.donut(document.getElementById("typeDonut"), document.getElementById("typeList"),
+    types.map((x) => ({ label: label(x.t), value: x.amount, color: TYPE_COLORS[x.t] })),
+    { center: short(tot.amount, 1), centerSub: "UZS total", fmt: (v) => short(v, 1) });
+
+  // monthly stacked amount by type
+  const mr = D.months.map((m) => periodRange(m));
+  const tseries = types.map((x) => ({
+    name: label(x.t), color: TYPE_COLORS[x.t],
+    values: mr.map((r) => sumTx((q) => q[2] === x.i && inRange(q[0], r) && cardOk(q[1])).amount),
+  }));
+  legend(document.getElementById("typeLegend"), tseries);
+  Charts.bars(document.getElementById("typeMonthly"), D.months.map(mlabel), tseries, { height: 220, fmt: (v) => short(v, 0) });
+
+  // commission vs cost per month
+  const comm = mr.map((r) => sumTx((q) => inRange(q[0], r) && cardOk(q[1])).commission);
+  const mcost = D.months.map((_, i) => costSum([i]));
+  const pnlSeries = [{ name: "Processing cost", color: "#f59e0b", values: mcost },
+    { name: "Net fee margin", color: "#16a34a", values: comm.map((c, i) => c - mcost[i]) }];
+  const line = { name: "Commission income", color: "#2563eb", values: comm };
+  legend(document.getElementById("pnlLegend"), [...pnlSeries, line]);
+  Charts.bars(document.getElementById("pnl"), D.months.map(mlabel), pnlSeries, { height: 220, fmt: (v) => short(v, 1), line });
+
+  // bank × card cost table
+  const shownCards = D.cards.map((c, i) => i).filter((i) => cardOk(i));
+  const bankRows = D.banks.map((b, bi) => {
+    const cells = shownCards.map((ci) => costSum(months, (r) => r[1] === bi && r[2] === ci));
+    return { b, cells, total: cells.reduce((a, c) => a + c, 0) };
+  }).sort((a, b) => b.total - a.total);
+  const colTot = shownCards.map((_, j) => bankRows.reduce((a, r) => a + r.cells[j], 0));
+  document.getElementById("bankTable").innerHTML = `
+    <thead><tr><th>Bank</th>${shownCards.map((ci) => `<th>${D.cards[ci]}</th>`).join("")}<th>Total</th><th>Share</th></tr></thead>
+    <tbody>${bankRows.map((r) => `<tr><td>${r.b}</td>${r.cells.map((c) => `<td>${short(c, 1)}</td>`).join("")}
+      <td><b>${short(r.total, 1)}</b></td><td>${pct((r.total / cost) * 100)}</td></tr>`).join("")}</tbody>
+    <tfoot><tr><td>Total</td>${colTot.map((c) => `<td>${short(c, 1)}</td>`).join("")}<td>${short(cost, 1)}</td><td>100%</td></tr></tfoot>`;
+
+  Charts.donut(document.getElementById("costDonut"), document.getElementById("costList"),
+    shownCards.map((ci, j) => ({ label: D.cards[ci], value: colTot[j], color: COLORS[D.cards[ci]] })),
+    { center: short(cost, 1), centerSub: "UZS cost", fmt: (v) => short(v, 1) });
+}
+render();
+App.rerenderOnResize(render);
+</script>
+</body>
+</html>

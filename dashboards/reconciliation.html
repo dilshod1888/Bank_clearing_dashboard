@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clearing &amp; Reconciliation · Payments Analytics</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+<main>
+  <div class="top">
+    <div>
+      <h1>Clearing &amp; Reconciliation Monitoring</h1>
+      <div class="sub" id="sub"></div>
+    </div>
+    <div class="filters">
+      <label>Period <select id="period"></select></label>
+      <label>Alert threshold <select id="threshold">
+        <option value="100">±100M UZS</option><option value="150" selected>±150M UZS</option><option value="250">±250M UZS</option>
+      </select></label>
+    </div>
+  </div>
+
+  <section class="grid kpis" id="kpis"></section>
+
+  <section class="grid row">
+    <div class="panel c7">
+      <h2>Clearing account balances <span id="balDate"></span></h2>
+      <div class="scroll"><table id="balTable"></table></div>
+    </div>
+    <div class="panel c5">
+      <h2>Balance dynamics <span id="balUnit"></span></h2>
+      <div class="legend" id="balLegend"></div>
+      <div class="chart" id="balChart"></div>
+    </div>
+  </section>
+
+  <section class="grid row">
+    <div class="panel c4">
+      <h2>Payment gateway file status <span>files</span></h2>
+      <div class="donut-wrap"><div class="chart" id="gwDonut"></div><div class="donut-list" id="gwList"></div></div>
+    </div>
+    <div class="panel c8">
+      <h2>Gateway vs clearing difference <span>daily, UZS (gateway − clearing)</span></h2>
+      <div class="chart" id="diffChart"></div>
+    </div>
+  </section>
+
+  <section class="grid row">
+    <div class="panel c4">
+      <h2>Error reasons <span>selected period</span></h2>
+      <div class="chart" id="errChart"></div>
+    </div>
+    <div class="panel c4">
+      <h2>File error rate <span id="errUnit"></span></h2>
+      <div class="chart" id="errRate"></div>
+    </div>
+    <div class="panel c4">
+      <h2>Reconciliation alerts <span id="alertCount"></span></h2>
+      <div class="scroll" style="max-height:236px;overflow-y:auto"><table id="alerts"></table></div>
+    </div>
+  </section>
+</main>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script>
+const { D, PALETTE, nf, short, pct, dlabel, periodRange, comparison, inRange, daysIn, delta, Charts, legend, buckets } = App;
+App.layout("reconciliation.html");
+
+const state = { period: "all", threshold: 150 };
+App.periodSelect(document.getElementById("period"), (v) => { state.period = v; render(); });
+document.getElementById("threshold").addEventListener("change", (e) => { state.threshold = +e.target.value; render(); });
+
+const MLN = 1e6;                      // balances and gateway amounts are stored in mln UZS
+const G = { files: 0, processed: 1, partial: 2, errors: 3, gw: 4, cl: 5 };
+const sumG = (r, col) => { let s = 0; for (let i = r.from; i <= r.to; i++) s += D.gateway[i][col]; return s; };
+const netAt = (i) => D.balances.reduce((a, acc) => a + acc[i], 0);
+const sumAt = (i, sign) => D.balances.reduce((a, acc) => a + (Math.sign(acc[i]) === sign ? acc[i] : 0), 0);
+const diffAt = (i) => D.gateway[i][G.gw] - D.gateway[i][G.cl];
+
+function kpi(label, value, unit, deltaHtml, cmpLabel, cls = "") {
+  return `<div class="panel kpi"><div class="label">${label}</div>
+    <div class="value ${cls}">${value}<span class="unit">${unit || ""}</span></div>
+    <div class="delta">${deltaHtml || "&nbsp;"}${deltaHtml ? `<em>${cmpLabel}</em>` : ""}</div></div>`;
+}
+
+function render() {
+  const range = periodRange(state.period);
+  const cmp = comparison(state.period);
+  const pd = cmp ? [daysIn(cmp.cur), daysIn(cmp.prev)] : null;
+  const last = range.to;
+  document.getElementById("sub").textContent = `${range.label} · balances as of ${D.dates[last].split("-").reverse().join(".")} · synthetic data, UZS`;
+
+  const files = sumG(range, G.files), processed = sumG(range, G.processed), errors = sumG(range, G.errors), partial = sumG(range, G.partial);
+  let netDiff = 0; for (let i = range.from; i <= range.to; i++) netDiff += diffAt(i);
+  const okRate = (r) => (sumG(r, G.processed) / sumG(r, G.files)) * 100;
+  const cmpNet = cmp ? netAt(cmp.prev.to) : null;
+
+  document.getElementById("kpis").innerHTML = [
+    kpi("Net clearing position", (netAt(last) >= 0 ? "" : "−") + short(Math.abs(netAt(last)) * MLN, 1), " UZS",
+      cmp && delta(netAt(last), cmpNet), cmp ? "vs " + dlabel(D.dates[cmp.prev.to]) : "", netAt(last) < 0 ? "down" : "up"),
+    kpi("Positive balances", short(sumAt(last, 1) * MLN, 1), " UZS", cmp && delta(sumAt(last, 1), sumAt(cmp.prev.to, 1)), cmp ? "vs " + dlabel(D.dates[cmp.prev.to]) : ""),
+    kpi("Negative balances", "−" + short(Math.abs(sumAt(last, -1)) * MLN, 1), " UZS",
+      cmp && delta(Math.abs(sumAt(last, -1)), Math.abs(sumAt(cmp.prev.to, -1)), { invert: true }), cmp ? "vs " + dlabel(D.dates[cmp.prev.to]) : ""),
+    kpi("Gateway files", short(files, 2), "", cmp && delta(sumG(cmp.cur, G.files), sumG(cmp.prev, G.files), { perDay: pd }), cmp?.label),
+    kpi("Processing success", pct((processed / files) * 100, 2), "", cmp && delta(okRate(cmp.cur), okRate(cmp.prev)), cmp?.label),
+    kpi("Net reconciliation gap", (netDiff >= 0 ? "+" : "−") + short(Math.abs(netDiff) * MLN, 1), " UZS", "", "", netDiff < 0 ? "down" : ""),
+  ].join("");
+
+  // balances table: last day vs previous day
+  const prevDay = Math.max(last - 1, 0);
+  document.getElementById("balDate").textContent = `mln UZS · ${dlabel(D.dates[last])} vs ${dlabel(D.dates[prevDay])}`;
+  const rows = D.accounts.map((a, i) => {
+    const cur = D.balances[i][last], prev = D.balances[i][prevDay], ch = cur - prev;
+    return `<tr><td>${a.split(" ")[0]}</td><td style="text-align:left">${a.split(" ").slice(1).join(" ")}</td>
+      <td class="${cur < 0 ? "down" : ""}">${nf(cur)}</td><td>${nf(prev)}</td>
+      <td class="${ch < 0 ? "down" : "up"}">${ch >= 0 ? "+" : ""}${nf(ch)}</td>
+      <td>${prev ? pct((ch / Math.abs(prev)) * 100) : "–"}</td>
+      <td><span class="badge ${cur >= 0 ? "pos" : "neg"}">${cur >= 0 ? "Positive" : "Negative"}</span></td></tr>`;
+  });
+  const tCur = netAt(last), tPrev = netAt(prevDay);
+  document.getElementById("balTable").innerHTML = `
+    <thead><tr><th>Account</th><th style="text-align:left">Name</th><th>Balance</th><th>Previous day</th><th>Change</th><th>Change %</th><th style="text-align:right">Status</th></tr></thead>
+    <tbody>${rows.join("")}</tbody>
+    <tfoot><tr><td>Net</td><td></td><td class="${tCur < 0 ? "down" : ""}">${nf(tCur)}</td><td>${nf(tPrev)}</td>
+      <td>${tCur - tPrev >= 0 ? "+" : ""}${nf(tCur - tPrev)}</td><td>${pct(((tCur - tPrev) / Math.abs(tPrev)) * 100)}</td><td></td></tr></tfoot>`;
+
+  // balance dynamics: end-of-bucket snapshot
+  const b = buckets(range);
+  const ends = b.list.map((x) => x.to);
+  const pos = ends.map((i) => sumAt(i, 1) * MLN), neg = ends.map((i) => sumAt(i, -1) * MLN);
+  const balSeries = [{ name: "Positive", color: "#16a34a", values: pos }, { name: "Negative", color: "#dc2626", values: neg }];
+  const net = { name: "Net position", color: "#1d4ed8", values: ends.map((i) => netAt(i) * MLN) };
+  document.getElementById("balUnit").textContent = b.weekly ? "end of week, UZS" : "end of day, UZS";
+  legend(document.getElementById("balLegend"), [...balSeries, net]);
+  Charts.bars(document.getElementById("balChart"), b.list.map((x) => x.label), balSeries, { height: 228, fmt: (v) => short(v, 0), line: net });
+
+  // gateway status donut
+  Charts.donut(document.getElementById("gwDonut"), document.getElementById("gwList"), [
+    { label: "Processed", value: processed - partial, color: "#2563eb" },
+    { label: "Partially processed", value: partial, color: "#f59e0b" },
+    { label: "Error", value: errors, color: "#dc2626" },
+  ], { center: short(files, 1), centerSub: "files received", fmt: (v) => nf(v) });
+
+  // daily difference
+  const idx = []; for (let i = range.from; i <= range.to; i++) idx.push(i);
+  Charts.bars(document.getElementById("diffChart"), idx.map((i) => dlabel(D.dates[i])),
+    [{ name: "Difference", color: "#16a34a", values: idx.map((i) => diffAt(i) * MLN) }],
+    { height: 236, fmt: (v) => short(v, 0), colorBySign: true });
+
+  // error reasons
+  const reasons = D.reasons.map((r, k) => {
+    let s = 0; for (let i = range.from; i <= range.to; i++) s += D.errors[k][i];
+    return { label: r, value: s };
+  }).sort((a, b) => b.value - a.value);
+  const errTot = reasons.reduce((a, r) => a + r.value, 0);
+  Charts.hbars(document.getElementById("errChart"), reasons.map((r, k) => ({ ...r, label: r.label, color: k === 0 ? "#dc2626" : "#f97316aa" })),
+    { fmt: (v) => `${nf(v)} · ${pct((v / errTot) * 100, 0)}`, rowH: 36, valueWidth: 92 });
+
+  // error rate trend
+  document.getElementById("errUnit").textContent = b.weekly ? "weekly, %" : "daily, %";
+  Charts.lines(document.getElementById("errRate"), b.list.map((x) => x.label),
+    [{ name: "Error rate", color: "#dc2626", values: b.list.map((x) => (sumG(x, G.errors) / sumG(x, G.files)) * 100) },
+     { name: "Partial rate", color: "#f59e0b", values: b.list.map((x) => (sumG(x, G.partial) / sumG(x, G.files)) * 100) }],
+    { height: 236, fmt: (v) => nf(v, 2) + "%" });
+
+  // alerts
+  const alerts = idx.filter((i) => Math.abs(diffAt(i)) >= state.threshold).reverse();
+  document.getElementById("alertCount").textContent = `${alerts.length} day${alerts.length === 1 ? "" : "s"} over ±${state.threshold}M`;
+  document.getElementById("alerts").innerHTML = alerts.length ? `
+    <thead><tr><th>Date</th><th>Gateway</th><th>Clearing</th><th>Gap</th><th>Severity</th></tr></thead>
+    <tbody>${alerts.map((i) => { const g = diffAt(i); const sev = Math.abs(g) >= 250;
+      return `<tr><td>${D.dates[i].split("-").reverse().join(".")}</td><td>${nf(D.gateway[i][G.gw])}</td><td>${nf(D.gateway[i][G.cl])}</td>
+      <td class="${g < 0 ? "down" : "up"}">${g >= 0 ? "+" : ""}${nf(g)}</td>
+      <td><span class="badge ${sev ? "neg" : "warn"}">${sev ? "High" : "Medium"}</span></td></tr>`; }).join("")}</tbody>`
+    : `<tbody><tr><td>No differences above the threshold in this period.</td></tr></tbody>`;
+}
+render();
+App.rerenderOnResize(render);
+</script>
+</body>
+</html>

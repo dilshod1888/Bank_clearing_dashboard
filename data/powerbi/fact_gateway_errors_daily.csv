@@ -1,0 +1,1087 @@
+date,error_reason,error_count
+2026-01-01,Account not found,31
+2026-01-01,Amount mismatch,16
+2026-01-01,File format error,13
+2026-01-01,Rejected by issuer,10
+2026-01-01,Duplicate transaction,4
+2026-01-01,Timeout,11
+2026-01-02,Account not found,22
+2026-01-02,Amount mismatch,15
+2026-01-02,File format error,13
+2026-01-02,Rejected by issuer,9
+2026-01-02,Duplicate transaction,3
+2026-01-02,Timeout,7
+2026-01-03,Account not found,21
+2026-01-03,Amount mismatch,16
+2026-01-03,File format error,12
+2026-01-03,Rejected by issuer,7
+2026-01-03,Duplicate transaction,4
+2026-01-03,Timeout,14
+2026-01-04,Account not found,14
+2026-01-04,Amount mismatch,9
+2026-01-04,File format error,7
+2026-01-04,Rejected by issuer,4
+2026-01-04,Duplicate transaction,2
+2026-01-04,Timeout,6
+2026-01-05,Account not found,27
+2026-01-05,Amount mismatch,16
+2026-01-05,File format error,14
+2026-01-05,Rejected by issuer,9
+2026-01-05,Duplicate transaction,3
+2026-01-05,Timeout,14
+2026-01-06,Account not found,18
+2026-01-06,Amount mismatch,9
+2026-01-06,File format error,11
+2026-01-06,Rejected by issuer,6
+2026-01-06,Duplicate transaction,3
+2026-01-06,Timeout,11
+2026-01-07,Account not found,23
+2026-01-07,Amount mismatch,16
+2026-01-07,File format error,15
+2026-01-07,Rejected by issuer,10
+2026-01-07,Duplicate transaction,4
+2026-01-07,Timeout,14
+2026-01-08,Account not found,20
+2026-01-08,Amount mismatch,12
+2026-01-08,File format error,13
+2026-01-08,Rejected by issuer,8
+2026-01-08,Duplicate transaction,3
+2026-01-08,Timeout,14
+2026-01-09,Account not found,30
+2026-01-09,Amount mismatch,18
+2026-01-09,File format error,13
+2026-01-09,Rejected by issuer,11
+2026-01-09,Duplicate transaction,3
+2026-01-09,Timeout,8
+2026-01-10,Account not found,22
+2026-01-10,Amount mismatch,10
+2026-01-10,File format error,9
+2026-01-10,Rejected by issuer,7
+2026-01-10,Duplicate transaction,3
+2026-01-10,Timeout,7
+2026-01-11,Account not found,12
+2026-01-11,Amount mismatch,9
+2026-01-11,File format error,6
+2026-01-11,Rejected by issuer,4
+2026-01-11,Duplicate transaction,2
+2026-01-11,Timeout,9
+2026-01-12,Account not found,13
+2026-01-12,Amount mismatch,10
+2026-01-12,File format error,6
+2026-01-12,Rejected by issuer,5
+2026-01-12,Duplicate transaction,2
+2026-01-12,Timeout,8
+2026-01-13,Account not found,23
+2026-01-13,Amount mismatch,12
+2026-01-13,File format error,11
+2026-01-13,Rejected by issuer,9
+2026-01-13,Duplicate transaction,3
+2026-01-13,Timeout,20
+2026-01-14,Account not found,20
+2026-01-14,Amount mismatch,10
+2026-01-14,File format error,9
+2026-01-14,Rejected by issuer,6
+2026-01-14,Duplicate transaction,3
+2026-01-14,Timeout,12
+2026-01-15,Account not found,20
+2026-01-15,Amount mismatch,14
+2026-01-15,File format error,8
+2026-01-15,Rejected by issuer,6
+2026-01-15,Duplicate transaction,3
+2026-01-15,Timeout,10
+2026-01-16,Account not found,26
+2026-01-16,Amount mismatch,15
+2026-01-16,File format error,11
+2026-01-16,Rejected by issuer,8
+2026-01-16,Duplicate transaction,4
+2026-01-16,Timeout,16
+2026-01-17,Account not found,24
+2026-01-17,Amount mismatch,13
+2026-01-17,File format error,11
+2026-01-17,Rejected by issuer,6
+2026-01-17,Duplicate transaction,3
+2026-01-17,Timeout,14
+2026-01-18,Account not found,14
+2026-01-18,Amount mismatch,9
+2026-01-18,File format error,6
+2026-01-18,Rejected by issuer,4
+2026-01-18,Duplicate transaction,3
+2026-01-18,Timeout,11
+2026-01-19,Account not found,31
+2026-01-19,Amount mismatch,16
+2026-01-19,File format error,15
+2026-01-19,Rejected by issuer,11
+2026-01-19,Duplicate transaction,5
+2026-01-19,Timeout,13
+2026-01-20,Account not found,24
+2026-01-20,Amount mismatch,17
+2026-01-20,File format error,17
+2026-01-20,Rejected by issuer,10
+2026-01-20,Duplicate transaction,5
+2026-01-20,Timeout,18
+2026-01-21,Account not found,14
+2026-01-21,Amount mismatch,8
+2026-01-21,File format error,6
+2026-01-21,Rejected by issuer,4
+2026-01-21,Duplicate transaction,2
+2026-01-21,Timeout,9
+2026-01-22,Account not found,21
+2026-01-22,Amount mismatch,15
+2026-01-22,File format error,9
+2026-01-22,Rejected by issuer,8
+2026-01-22,Duplicate transaction,4
+2026-01-22,Timeout,10
+2026-01-23,Account not found,28
+2026-01-23,Amount mismatch,14
+2026-01-23,File format error,13
+2026-01-23,Rejected by issuer,10
+2026-01-23,Duplicate transaction,4
+2026-01-23,Timeout,9
+2026-01-24,Account not found,21
+2026-01-24,Amount mismatch,11
+2026-01-24,File format error,9
+2026-01-24,Rejected by issuer,6
+2026-01-24,Duplicate transaction,3
+2026-01-24,Timeout,7
+2026-01-25,Account not found,22
+2026-01-25,Amount mismatch,11
+2026-01-25,File format error,10
+2026-01-25,Rejected by issuer,7
+2026-01-25,Duplicate transaction,4
+2026-01-25,Timeout,11
+2026-01-26,Account not found,33
+2026-01-26,Amount mismatch,16
+2026-01-26,File format error,17
+2026-01-26,Rejected by issuer,9
+2026-01-26,Duplicate transaction,5
+2026-01-26,Timeout,13
+2026-01-27,Account not found,19
+2026-01-27,Amount mismatch,10
+2026-01-27,File format error,9
+2026-01-27,Rejected by issuer,6
+2026-01-27,Duplicate transaction,3
+2026-01-27,Timeout,4
+2026-01-28,Account not found,24
+2026-01-28,Amount mismatch,15
+2026-01-28,File format error,12
+2026-01-28,Rejected by issuer,7
+2026-01-28,Duplicate transaction,4
+2026-01-28,Timeout,6
+2026-01-29,Account not found,28
+2026-01-29,Amount mismatch,15
+2026-01-29,File format error,15
+2026-01-29,Rejected by issuer,11
+2026-01-29,Duplicate transaction,4
+2026-01-29,Timeout,25
+2026-01-30,Account not found,21
+2026-01-30,Amount mismatch,15
+2026-01-30,File format error,11
+2026-01-30,Rejected by issuer,7
+2026-01-30,Duplicate transaction,4
+2026-01-30,Timeout,9
+2026-01-31,Account not found,19
+2026-01-31,Amount mismatch,12
+2026-01-31,File format error,10
+2026-01-31,Rejected by issuer,9
+2026-01-31,Duplicate transaction,3
+2026-01-31,Timeout,18
+2026-02-01,Account not found,20
+2026-02-01,Amount mismatch,15
+2026-02-01,File format error,11
+2026-02-01,Rejected by issuer,8
+2026-02-01,Duplicate transaction,3
+2026-02-01,Timeout,8
+2026-02-02,Account not found,23
+2026-02-02,Amount mismatch,12
+2026-02-02,File format error,9
+2026-02-02,Rejected by issuer,9
+2026-02-02,Duplicate transaction,3
+2026-02-02,Timeout,9
+2026-02-03,Account not found,25
+2026-02-03,Amount mismatch,17
+2026-02-03,File format error,12
+2026-02-03,Rejected by issuer,9
+2026-02-03,Duplicate transaction,3
+2026-02-03,Timeout,10
+2026-02-04,Account not found,26
+2026-02-04,Amount mismatch,15
+2026-02-04,File format error,12
+2026-02-04,Rejected by issuer,7
+2026-02-04,Duplicate transaction,4
+2026-02-04,Timeout,5
+2026-02-05,Account not found,16
+2026-02-05,Amount mismatch,10
+2026-02-05,File format error,8
+2026-02-05,Rejected by issuer,5
+2026-02-05,Duplicate transaction,3
+2026-02-05,Timeout,13
+2026-02-06,Account not found,16
+2026-02-06,Amount mismatch,10
+2026-02-06,File format error,9
+2026-02-06,Rejected by issuer,6
+2026-02-06,Duplicate transaction,2
+2026-02-06,Timeout,7
+2026-02-07,Account not found,26
+2026-02-07,Amount mismatch,15
+2026-02-07,File format error,15
+2026-02-07,Rejected by issuer,10
+2026-02-07,Duplicate transaction,3
+2026-02-07,Timeout,10
+2026-02-08,Account not found,23
+2026-02-08,Amount mismatch,12
+2026-02-08,File format error,10
+2026-02-08,Rejected by issuer,9
+2026-02-08,Duplicate transaction,4
+2026-02-08,Timeout,11
+2026-02-09,Account not found,25
+2026-02-09,Amount mismatch,16
+2026-02-09,File format error,14
+2026-02-09,Rejected by issuer,8
+2026-02-09,Duplicate transaction,4
+2026-02-09,Timeout,9
+2026-02-10,Account not found,25
+2026-02-10,Amount mismatch,12
+2026-02-10,File format error,13
+2026-02-10,Rejected by issuer,9
+2026-02-10,Duplicate transaction,4
+2026-02-10,Timeout,9
+2026-02-11,Account not found,23
+2026-02-11,Amount mismatch,15
+2026-02-11,File format error,13
+2026-02-11,Rejected by issuer,6
+2026-02-11,Duplicate transaction,4
+2026-02-11,Timeout,6
+2026-02-12,Account not found,24
+2026-02-12,Amount mismatch,10
+2026-02-12,File format error,11
+2026-02-12,Rejected by issuer,8
+2026-02-12,Duplicate transaction,3
+2026-02-12,Timeout,9
+2026-02-13,Account not found,20
+2026-02-13,Amount mismatch,13
+2026-02-13,File format error,13
+2026-02-13,Rejected by issuer,7
+2026-02-13,Duplicate transaction,4
+2026-02-13,Timeout,10
+2026-02-14,Account not found,26
+2026-02-14,Amount mismatch,17
+2026-02-14,File format error,12
+2026-02-14,Rejected by issuer,8
+2026-02-14,Duplicate transaction,5
+2026-02-14,Timeout,11
+2026-02-15,Account not found,10
+2026-02-15,Amount mismatch,6
+2026-02-15,File format error,5
+2026-02-15,Rejected by issuer,3
+2026-02-15,Duplicate transaction,2
+2026-02-15,Timeout,10
+2026-02-16,Account not found,24
+2026-02-16,Amount mismatch,10
+2026-02-16,File format error,10
+2026-02-16,Rejected by issuer,7
+2026-02-16,Duplicate transaction,4
+2026-02-16,Timeout,10
+2026-02-17,Account not found,18
+2026-02-17,Amount mismatch,8
+2026-02-17,File format error,10
+2026-02-17,Rejected by issuer,7
+2026-02-17,Duplicate transaction,2
+2026-02-17,Timeout,9
+2026-02-18,Account not found,12
+2026-02-18,Amount mismatch,9
+2026-02-18,File format error,6
+2026-02-18,Rejected by issuer,5
+2026-02-18,Duplicate transaction,2
+2026-02-18,Timeout,9
+2026-02-19,Account not found,22
+2026-02-19,Amount mismatch,17
+2026-02-19,File format error,14
+2026-02-19,Rejected by issuer,7
+2026-02-19,Duplicate transaction,3
+2026-02-19,Timeout,13
+2026-02-20,Account not found,17
+2026-02-20,Amount mismatch,11
+2026-02-20,File format error,11
+2026-02-20,Rejected by issuer,8
+2026-02-20,Duplicate transaction,3
+2026-02-20,Timeout,12
+2026-02-21,Account not found,20
+2026-02-21,Amount mismatch,10
+2026-02-21,File format error,8
+2026-02-21,Rejected by issuer,7
+2026-02-21,Duplicate transaction,3
+2026-02-21,Timeout,9
+2026-02-22,Account not found,14
+2026-02-22,Amount mismatch,8
+2026-02-22,File format error,5
+2026-02-22,Rejected by issuer,5
+2026-02-22,Duplicate transaction,2
+2026-02-22,Timeout,2
+2026-02-23,Account not found,17
+2026-02-23,Amount mismatch,8
+2026-02-23,File format error,7
+2026-02-23,Rejected by issuer,5
+2026-02-23,Duplicate transaction,2
+2026-02-23,Timeout,5
+2026-02-24,Account not found,30
+2026-02-24,Amount mismatch,14
+2026-02-24,File format error,14
+2026-02-24,Rejected by issuer,10
+2026-02-24,Duplicate transaction,4
+2026-02-24,Timeout,10
+2026-02-25,Account not found,35
+2026-02-25,Amount mismatch,16
+2026-02-25,File format error,15
+2026-02-25,Rejected by issuer,9
+2026-02-25,Duplicate transaction,6
+2026-02-25,Timeout,13
+2026-02-26,Account not found,32
+2026-02-26,Amount mismatch,18
+2026-02-26,File format error,16
+2026-02-26,Rejected by issuer,11
+2026-02-26,Duplicate transaction,5
+2026-02-26,Timeout,17
+2026-02-27,Account not found,17
+2026-02-27,Amount mismatch,11
+2026-02-27,File format error,9
+2026-02-27,Rejected by issuer,6
+2026-02-27,Duplicate transaction,3
+2026-02-27,Timeout,5
+2026-02-28,Account not found,25
+2026-02-28,Amount mismatch,13
+2026-02-28,File format error,13
+2026-02-28,Rejected by issuer,9
+2026-02-28,Duplicate transaction,4
+2026-02-28,Timeout,10
+2026-03-01,Account not found,13
+2026-03-01,Amount mismatch,7
+2026-03-01,File format error,6
+2026-03-01,Rejected by issuer,5
+2026-03-01,Duplicate transaction,2
+2026-03-01,Timeout,9
+2026-03-02,Account not found,25
+2026-03-02,Amount mismatch,15
+2026-03-02,File format error,15
+2026-03-02,Rejected by issuer,9
+2026-03-02,Duplicate transaction,4
+2026-03-02,Timeout,12
+2026-03-03,Account not found,26
+2026-03-03,Amount mismatch,15
+2026-03-03,File format error,13
+2026-03-03,Rejected by issuer,8
+2026-03-03,Duplicate transaction,5
+2026-03-03,Timeout,14
+2026-03-04,Account not found,17
+2026-03-04,Amount mismatch,8
+2026-03-04,File format error,8
+2026-03-04,Rejected by issuer,5
+2026-03-04,Duplicate transaction,2
+2026-03-04,Timeout,7
+2026-03-05,Account not found,19
+2026-03-05,Amount mismatch,10
+2026-03-05,File format error,10
+2026-03-05,Rejected by issuer,6
+2026-03-05,Duplicate transaction,3
+2026-03-05,Timeout,8
+2026-03-06,Account not found,19
+2026-03-06,Amount mismatch,10
+2026-03-06,File format error,7
+2026-03-06,Rejected by issuer,6
+2026-03-06,Duplicate transaction,2
+2026-03-06,Timeout,10
+2026-03-07,Account not found,34
+2026-03-07,Amount mismatch,15
+2026-03-07,File format error,14
+2026-03-07,Rejected by issuer,12
+2026-03-07,Duplicate transaction,6
+2026-03-07,Timeout,14
+2026-03-08,Account not found,21
+2026-03-08,Amount mismatch,11
+2026-03-08,File format error,11
+2026-03-08,Rejected by issuer,7
+2026-03-08,Duplicate transaction,3
+2026-03-08,Timeout,15
+2026-03-09,Account not found,16
+2026-03-09,Amount mismatch,10
+2026-03-09,File format error,7
+2026-03-09,Rejected by issuer,5
+2026-03-09,Duplicate transaction,2
+2026-03-09,Timeout,6
+2026-03-10,Account not found,25
+2026-03-10,Amount mismatch,15
+2026-03-10,File format error,16
+2026-03-10,Rejected by issuer,10
+2026-03-10,Duplicate transaction,5
+2026-03-10,Timeout,13
+2026-03-11,Account not found,22
+2026-03-11,Amount mismatch,11
+2026-03-11,File format error,14
+2026-03-11,Rejected by issuer,9
+2026-03-11,Duplicate transaction,3
+2026-03-11,Timeout,12
+2026-03-12,Account not found,15
+2026-03-12,Amount mismatch,8
+2026-03-12,File format error,6
+2026-03-12,Rejected by issuer,5
+2026-03-12,Duplicate transaction,2
+2026-03-12,Timeout,9
+2026-03-13,Account not found,26
+2026-03-13,Amount mismatch,17
+2026-03-13,File format error,14
+2026-03-13,Rejected by issuer,9
+2026-03-13,Duplicate transaction,4
+2026-03-13,Timeout,6
+2026-03-14,Account not found,30
+2026-03-14,Amount mismatch,20
+2026-03-14,File format error,14
+2026-03-14,Rejected by issuer,9
+2026-03-14,Duplicate transaction,4
+2026-03-14,Timeout,20
+2026-03-15,Account not found,16
+2026-03-15,Amount mismatch,9
+2026-03-15,File format error,8
+2026-03-15,Rejected by issuer,5
+2026-03-15,Duplicate transaction,2
+2026-03-15,Timeout,4
+2026-03-16,Account not found,27
+2026-03-16,Amount mismatch,16
+2026-03-16,File format error,9
+2026-03-16,Rejected by issuer,8
+2026-03-16,Duplicate transaction,3
+2026-03-16,Timeout,6
+2026-03-17,Account not found,23
+2026-03-17,Amount mismatch,11
+2026-03-17,File format error,9
+2026-03-17,Rejected by issuer,8
+2026-03-17,Duplicate transaction,4
+2026-03-17,Timeout,7
+2026-03-18,Account not found,26
+2026-03-18,Amount mismatch,13
+2026-03-18,File format error,11
+2026-03-18,Rejected by issuer,7
+2026-03-18,Duplicate transaction,4
+2026-03-18,Timeout,11
+2026-03-19,Account not found,19
+2026-03-19,Amount mismatch,9
+2026-03-19,File format error,9
+2026-03-19,Rejected by issuer,7
+2026-03-19,Duplicate transaction,3
+2026-03-19,Timeout,7
+2026-03-20,Account not found,22
+2026-03-20,Amount mismatch,15
+2026-03-20,File format error,10
+2026-03-20,Rejected by issuer,8
+2026-03-20,Duplicate transaction,4
+2026-03-20,Timeout,15
+2026-03-21,Account not found,25
+2026-03-21,Amount mismatch,14
+2026-03-21,File format error,10
+2026-03-21,Rejected by issuer,6
+2026-03-21,Duplicate transaction,3
+2026-03-21,Timeout,11
+2026-03-22,Account not found,28
+2026-03-22,Amount mismatch,15
+2026-03-22,File format error,10
+2026-03-22,Rejected by issuer,9
+2026-03-22,Duplicate transaction,4
+2026-03-22,Timeout,11
+2026-03-23,Account not found,26
+2026-03-23,Amount mismatch,11
+2026-03-23,File format error,13
+2026-03-23,Rejected by issuer,8
+2026-03-23,Duplicate transaction,4
+2026-03-23,Timeout,7
+2026-03-24,Account not found,23
+2026-03-24,Amount mismatch,15
+2026-03-24,File format error,13
+2026-03-24,Rejected by issuer,8
+2026-03-24,Duplicate transaction,3
+2026-03-24,Timeout,21
+2026-03-25,Account not found,23
+2026-03-25,Amount mismatch,16
+2026-03-25,File format error,14
+2026-03-25,Rejected by issuer,9
+2026-03-25,Duplicate transaction,5
+2026-03-25,Timeout,18
+2026-03-26,Account not found,27
+2026-03-26,Amount mismatch,17
+2026-03-26,File format error,11
+2026-03-26,Rejected by issuer,9
+2026-03-26,Duplicate transaction,4
+2026-03-26,Timeout,7
+2026-03-27,Account not found,33
+2026-03-27,Amount mismatch,19
+2026-03-27,File format error,13
+2026-03-27,Rejected by issuer,13
+2026-03-27,Duplicate transaction,5
+2026-03-27,Timeout,16
+2026-03-28,Account not found,27
+2026-03-28,Amount mismatch,13
+2026-03-28,File format error,12
+2026-03-28,Rejected by issuer,8
+2026-03-28,Duplicate transaction,4
+2026-03-28,Timeout,16
+2026-03-29,Account not found,30
+2026-03-29,Amount mismatch,14
+2026-03-29,File format error,11
+2026-03-29,Rejected by issuer,8
+2026-03-29,Duplicate transaction,5
+2026-03-29,Timeout,14
+2026-03-30,Account not found,24
+2026-03-30,Amount mismatch,11
+2026-03-30,File format error,13
+2026-03-30,Rejected by issuer,7
+2026-03-30,Duplicate transaction,4
+2026-03-30,Timeout,10
+2026-03-31,Account not found,24
+2026-03-31,Amount mismatch,12
+2026-03-31,File format error,8
+2026-03-31,Rejected by issuer,6
+2026-03-31,Duplicate transaction,3
+2026-03-31,Timeout,9
+2026-04-01,Account not found,18
+2026-04-01,Amount mismatch,8
+2026-04-01,File format error,9
+2026-04-01,Rejected by issuer,6
+2026-04-01,Duplicate transaction,3
+2026-04-01,Timeout,5
+2026-04-02,Account not found,18
+2026-04-02,Amount mismatch,10
+2026-04-02,File format error,10
+2026-04-02,Rejected by issuer,6
+2026-04-02,Duplicate transaction,2
+2026-04-02,Timeout,4
+2026-04-03,Account not found,28
+2026-04-03,Amount mismatch,13
+2026-04-03,File format error,13
+2026-04-03,Rejected by issuer,8
+2026-04-03,Duplicate transaction,4
+2026-04-03,Timeout,8
+2026-04-04,Account not found,24
+2026-04-04,Amount mismatch,11
+2026-04-04,File format error,9
+2026-04-04,Rejected by issuer,7
+2026-04-04,Duplicate transaction,3
+2026-04-04,Timeout,16
+2026-04-05,Account not found,14
+2026-04-05,Amount mismatch,7
+2026-04-05,File format error,6
+2026-04-05,Rejected by issuer,4
+2026-04-05,Duplicate transaction,2
+2026-04-05,Timeout,6
+2026-04-06,Account not found,29
+2026-04-06,Amount mismatch,16
+2026-04-06,File format error,17
+2026-04-06,Rejected by issuer,11
+2026-04-06,Duplicate transaction,4
+2026-04-06,Timeout,14
+2026-04-07,Account not found,26
+2026-04-07,Amount mismatch,14
+2026-04-07,File format error,13
+2026-04-07,Rejected by issuer,9
+2026-04-07,Duplicate transaction,4
+2026-04-07,Timeout,21
+2026-04-08,Account not found,18
+2026-04-08,Amount mismatch,9
+2026-04-08,File format error,10
+2026-04-08,Rejected by issuer,6
+2026-04-08,Duplicate transaction,3
+2026-04-08,Timeout,13
+2026-04-09,Account not found,32
+2026-04-09,Amount mismatch,15
+2026-04-09,File format error,16
+2026-04-09,Rejected by issuer,8
+2026-04-09,Duplicate transaction,4
+2026-04-09,Timeout,14
+2026-04-10,Account not found,32
+2026-04-10,Amount mismatch,15
+2026-04-10,File format error,16
+2026-04-10,Rejected by issuer,10
+2026-04-10,Duplicate transaction,6
+2026-04-10,Timeout,17
+2026-04-11,Account not found,15
+2026-04-11,Amount mismatch,9
+2026-04-11,File format error,8
+2026-04-11,Rejected by issuer,7
+2026-04-11,Duplicate transaction,2
+2026-04-11,Timeout,12
+2026-04-12,Account not found,23
+2026-04-12,Amount mismatch,13
+2026-04-12,File format error,13
+2026-04-12,Rejected by issuer,8
+2026-04-12,Duplicate transaction,3
+2026-04-12,Timeout,17
+2026-04-13,Account not found,30
+2026-04-13,Amount mismatch,14
+2026-04-13,File format error,12
+2026-04-13,Rejected by issuer,8
+2026-04-13,Duplicate transaction,5
+2026-04-13,Timeout,15
+2026-04-14,Account not found,16
+2026-04-14,Amount mismatch,9
+2026-04-14,File format error,10
+2026-04-14,Rejected by issuer,6
+2026-04-14,Duplicate transaction,3
+2026-04-14,Timeout,13
+2026-04-15,Account not found,25
+2026-04-15,Amount mismatch,14
+2026-04-15,File format error,11
+2026-04-15,Rejected by issuer,10
+2026-04-15,Duplicate transaction,3
+2026-04-15,Timeout,16
+2026-04-16,Account not found,25
+2026-04-16,Amount mismatch,17
+2026-04-16,File format error,10
+2026-04-16,Rejected by issuer,9
+2026-04-16,Duplicate transaction,4
+2026-04-16,Timeout,11
+2026-04-17,Account not found,21
+2026-04-17,Amount mismatch,9
+2026-04-17,File format error,11
+2026-04-17,Rejected by issuer,6
+2026-04-17,Duplicate transaction,2
+2026-04-17,Timeout,8
+2026-04-18,Account not found,32
+2026-04-18,Amount mismatch,19
+2026-04-18,File format error,16
+2026-04-18,Rejected by issuer,12
+2026-04-18,Duplicate transaction,5
+2026-04-18,Timeout,6
+2026-04-19,Account not found,17
+2026-04-19,Amount mismatch,10
+2026-04-19,File format error,7
+2026-04-19,Rejected by issuer,6
+2026-04-19,Duplicate transaction,3
+2026-04-19,Timeout,12
+2026-04-20,Account not found,22
+2026-04-20,Amount mismatch,13
+2026-04-20,File format error,12
+2026-04-20,Rejected by issuer,8
+2026-04-20,Duplicate transaction,5
+2026-04-20,Timeout,21
+2026-04-21,Account not found,30
+2026-04-21,Amount mismatch,14
+2026-04-21,File format error,13
+2026-04-21,Rejected by issuer,7
+2026-04-21,Duplicate transaction,4
+2026-04-21,Timeout,7
+2026-04-22,Account not found,16
+2026-04-22,Amount mismatch,10
+2026-04-22,File format error,8
+2026-04-22,Rejected by issuer,6
+2026-04-22,Duplicate transaction,3
+2026-04-22,Timeout,3
+2026-04-23,Account not found,32
+2026-04-23,Amount mismatch,13
+2026-04-23,File format error,12
+2026-04-23,Rejected by issuer,8
+2026-04-23,Duplicate transaction,3
+2026-04-23,Timeout,16
+2026-04-24,Account not found,22
+2026-04-24,Amount mismatch,14
+2026-04-24,File format error,12
+2026-04-24,Rejected by issuer,7
+2026-04-24,Duplicate transaction,4
+2026-04-24,Timeout,10
+2026-04-25,Account not found,33
+2026-04-25,Amount mismatch,21
+2026-04-25,File format error,17
+2026-04-25,Rejected by issuer,9
+2026-04-25,Duplicate transaction,5
+2026-04-25,Timeout,13
+2026-04-26,Account not found,25
+2026-04-26,Amount mismatch,16
+2026-04-26,File format error,15
+2026-04-26,Rejected by issuer,7
+2026-04-26,Duplicate transaction,4
+2026-04-26,Timeout,15
+2026-04-27,Account not found,18
+2026-04-27,Amount mismatch,10
+2026-04-27,File format error,8
+2026-04-27,Rejected by issuer,5
+2026-04-27,Duplicate transaction,3
+2026-04-27,Timeout,5
+2026-04-28,Account not found,19
+2026-04-28,Amount mismatch,10
+2026-04-28,File format error,10
+2026-04-28,Rejected by issuer,5
+2026-04-28,Duplicate transaction,3
+2026-04-28,Timeout,5
+2026-04-29,Account not found,25
+2026-04-29,Amount mismatch,15
+2026-04-29,File format error,14
+2026-04-29,Rejected by issuer,9
+2026-04-29,Duplicate transaction,5
+2026-04-29,Timeout,18
+2026-04-30,Account not found,35
+2026-04-30,Amount mismatch,20
+2026-04-30,File format error,18
+2026-04-30,Rejected by issuer,10
+2026-04-30,Duplicate transaction,4
+2026-04-30,Timeout,7
+2026-05-01,Account not found,35
+2026-05-01,Amount mismatch,18
+2026-05-01,File format error,13
+2026-05-01,Rejected by issuer,10
+2026-05-01,Duplicate transaction,5
+2026-05-01,Timeout,20
+2026-05-02,Account not found,28
+2026-05-02,Amount mismatch,15
+2026-05-02,File format error,12
+2026-05-02,Rejected by issuer,8
+2026-05-02,Duplicate transaction,5
+2026-05-02,Timeout,22
+2026-05-03,Account not found,29
+2026-05-03,Amount mismatch,15
+2026-05-03,File format error,14
+2026-05-03,Rejected by issuer,9
+2026-05-03,Duplicate transaction,3
+2026-05-03,Timeout,5
+2026-05-04,Account not found,20
+2026-05-04,Amount mismatch,12
+2026-05-04,File format error,9
+2026-05-04,Rejected by issuer,6
+2026-05-04,Duplicate transaction,3
+2026-05-04,Timeout,21
+2026-05-05,Account not found,18
+2026-05-05,Amount mismatch,12
+2026-05-05,File format error,11
+2026-05-05,Rejected by issuer,6
+2026-05-05,Duplicate transaction,3
+2026-05-05,Timeout,14
+2026-05-06,Account not found,14
+2026-05-06,Amount mismatch,8
+2026-05-06,File format error,7
+2026-05-06,Rejected by issuer,4
+2026-05-06,Duplicate transaction,3
+2026-05-06,Timeout,11
+2026-05-07,Account not found,16
+2026-05-07,Amount mismatch,11
+2026-05-07,File format error,10
+2026-05-07,Rejected by issuer,7
+2026-05-07,Duplicate transaction,3
+2026-05-07,Timeout,9
+2026-05-08,Account not found,26
+2026-05-08,Amount mismatch,13
+2026-05-08,File format error,12
+2026-05-08,Rejected by issuer,8
+2026-05-08,Duplicate transaction,4
+2026-05-08,Timeout,13
+2026-05-09,Account not found,30
+2026-05-09,Amount mismatch,16
+2026-05-09,File format error,13
+2026-05-09,Rejected by issuer,8
+2026-05-09,Duplicate transaction,4
+2026-05-09,Timeout,6
+2026-05-10,Account not found,27
+2026-05-10,Amount mismatch,14
+2026-05-10,File format error,11
+2026-05-10,Rejected by issuer,8
+2026-05-10,Duplicate transaction,4
+2026-05-10,Timeout,6
+2026-05-11,Account not found,13
+2026-05-11,Amount mismatch,8
+2026-05-11,File format error,7
+2026-05-11,Rejected by issuer,4
+2026-05-11,Duplicate transaction,2
+2026-05-11,Timeout,8
+2026-05-12,Account not found,16
+2026-05-12,Amount mismatch,9
+2026-05-12,File format error,8
+2026-05-12,Rejected by issuer,5
+2026-05-12,Duplicate transaction,2
+2026-05-12,Timeout,7
+2026-05-13,Account not found,17
+2026-05-13,Amount mismatch,12
+2026-05-13,File format error,11
+2026-05-13,Rejected by issuer,8
+2026-05-13,Duplicate transaction,4
+2026-05-13,Timeout,10
+2026-05-14,Account not found,18
+2026-05-14,Amount mismatch,14
+2026-05-14,File format error,10
+2026-05-14,Rejected by issuer,6
+2026-05-14,Duplicate transaction,3
+2026-05-14,Timeout,10
+2026-05-15,Account not found,15
+2026-05-15,Amount mismatch,8
+2026-05-15,File format error,8
+2026-05-15,Rejected by issuer,4
+2026-05-15,Duplicate transaction,3
+2026-05-15,Timeout,6
+2026-05-16,Account not found,30
+2026-05-16,Amount mismatch,17
+2026-05-16,File format error,16
+2026-05-16,Rejected by issuer,10
+2026-05-16,Duplicate transaction,4
+2026-05-16,Timeout,10
+2026-05-17,Account not found,18
+2026-05-17,Amount mismatch,11
+2026-05-17,File format error,10
+2026-05-17,Rejected by issuer,5
+2026-05-17,Duplicate transaction,3
+2026-05-17,Timeout,12
+2026-05-18,Account not found,21
+2026-05-18,Amount mismatch,10
+2026-05-18,File format error,10
+2026-05-18,Rejected by issuer,7
+2026-05-18,Duplicate transaction,3
+2026-05-18,Timeout,4
+2026-05-19,Account not found,24
+2026-05-19,Amount mismatch,14
+2026-05-19,File format error,15
+2026-05-19,Rejected by issuer,10
+2026-05-19,Duplicate transaction,4
+2026-05-19,Timeout,17
+2026-05-20,Account not found,21
+2026-05-20,Amount mismatch,12
+2026-05-20,File format error,8
+2026-05-20,Rejected by issuer,6
+2026-05-20,Duplicate transaction,3
+2026-05-20,Timeout,6
+2026-05-21,Account not found,24
+2026-05-21,Amount mismatch,18
+2026-05-21,File format error,14
+2026-05-21,Rejected by issuer,11
+2026-05-21,Duplicate transaction,4
+2026-05-21,Timeout,19
+2026-05-22,Account not found,16
+2026-05-22,Amount mismatch,9
+2026-05-22,File format error,7
+2026-05-22,Rejected by issuer,5
+2026-05-22,Duplicate transaction,3
+2026-05-22,Timeout,10
+2026-05-23,Account not found,13
+2026-05-23,Amount mismatch,9
+2026-05-23,File format error,9
+2026-05-23,Rejected by issuer,5
+2026-05-23,Duplicate transaction,2
+2026-05-23,Timeout,10
+2026-05-24,Account not found,23
+2026-05-24,Amount mismatch,13
+2026-05-24,File format error,12
+2026-05-24,Rejected by issuer,9
+2026-05-24,Duplicate transaction,3
+2026-05-24,Timeout,19
+2026-05-25,Account not found,24
+2026-05-25,Amount mismatch,12
+2026-05-25,File format error,13
+2026-05-25,Rejected by issuer,7
+2026-05-25,Duplicate transaction,4
+2026-05-25,Timeout,17
+2026-05-26,Account not found,15
+2026-05-26,Amount mismatch,8
+2026-05-26,File format error,6
+2026-05-26,Rejected by issuer,5
+2026-05-26,Duplicate transaction,2
+2026-05-26,Timeout,12
+2026-05-27,Account not found,17
+2026-05-27,Amount mismatch,12
+2026-05-27,File format error,8
+2026-05-27,Rejected by issuer,6
+2026-05-27,Duplicate transaction,3
+2026-05-27,Timeout,10
+2026-05-28,Account not found,23
+2026-05-28,Amount mismatch,14
+2026-05-28,File format error,10
+2026-05-28,Rejected by issuer,8
+2026-05-28,Duplicate transaction,4
+2026-05-28,Timeout,22
+2026-05-29,Account not found,25
+2026-05-29,Amount mismatch,13
+2026-05-29,File format error,13
+2026-05-29,Rejected by issuer,8
+2026-05-29,Duplicate transaction,4
+2026-05-29,Timeout,7
+2026-05-30,Account not found,25
+2026-05-30,Amount mismatch,18
+2026-05-30,File format error,12
+2026-05-30,Rejected by issuer,10
+2026-05-30,Duplicate transaction,4
+2026-05-30,Timeout,16
+2026-05-31,Account not found,24
+2026-05-31,Amount mismatch,19
+2026-05-31,File format error,13
+2026-05-31,Rejected by issuer,10
+2026-05-31,Duplicate transaction,5
+2026-05-31,Timeout,14
+2026-06-01,Account not found,18
+2026-06-01,Amount mismatch,8
+2026-06-01,File format error,7
+2026-06-01,Rejected by issuer,6
+2026-06-01,Duplicate transaction,2
+2026-06-01,Timeout,5
+2026-06-02,Account not found,15
+2026-06-02,Amount mismatch,11
+2026-06-02,File format error,9
+2026-06-02,Rejected by issuer,5
+2026-06-02,Duplicate transaction,2
+2026-06-02,Timeout,11
+2026-06-03,Account not found,29
+2026-06-03,Amount mismatch,13
+2026-06-03,File format error,14
+2026-06-03,Rejected by issuer,10
+2026-06-03,Duplicate transaction,4
+2026-06-03,Timeout,3
+2026-06-04,Account not found,17
+2026-06-04,Amount mismatch,14
+2026-06-04,File format error,9
+2026-06-04,Rejected by issuer,8
+2026-06-04,Duplicate transaction,4
+2026-06-04,Timeout,10
+2026-06-05,Account not found,26
+2026-06-05,Amount mismatch,16
+2026-06-05,File format error,11
+2026-06-05,Rejected by issuer,10
+2026-06-05,Duplicate transaction,4
+2026-06-05,Timeout,7
+2026-06-06,Account not found,38
+2026-06-06,Amount mismatch,16
+2026-06-06,File format error,14
+2026-06-06,Rejected by issuer,10
+2026-06-06,Duplicate transaction,4
+2026-06-06,Timeout,18
+2026-06-07,Account not found,13
+2026-06-07,Amount mismatch,8
+2026-06-07,File format error,7
+2026-06-07,Rejected by issuer,3
+2026-06-07,Duplicate transaction,2
+2026-06-07,Timeout,4
+2026-06-08,Account not found,20
+2026-06-08,Amount mismatch,11
+2026-06-08,File format error,10
+2026-06-08,Rejected by issuer,6
+2026-06-08,Duplicate transaction,3
+2026-06-08,Timeout,6
+2026-06-09,Account not found,31
+2026-06-09,Amount mismatch,19
+2026-06-09,File format error,13
+2026-06-09,Rejected by issuer,11
+2026-06-09,Duplicate transaction,5
+2026-06-09,Timeout,13
+2026-06-10,Account not found,25
+2026-06-10,Amount mismatch,13
+2026-06-10,File format error,12
+2026-06-10,Rejected by issuer,8
+2026-06-10,Duplicate transaction,3
+2026-06-10,Timeout,7
+2026-06-11,Account not found,23
+2026-06-11,Amount mismatch,11
+2026-06-11,File format error,10
+2026-06-11,Rejected by issuer,5
+2026-06-11,Duplicate transaction,3
+2026-06-11,Timeout,8
+2026-06-12,Account not found,31
+2026-06-12,Amount mismatch,16
+2026-06-12,File format error,13
+2026-06-12,Rejected by issuer,10
+2026-06-12,Duplicate transaction,4
+2026-06-12,Timeout,15
+2026-06-13,Account not found,28
+2026-06-13,Amount mismatch,19
+2026-06-13,File format error,15
+2026-06-13,Rejected by issuer,11
+2026-06-13,Duplicate transaction,4
+2026-06-13,Timeout,13
+2026-06-14,Account not found,19
+2026-06-14,Amount mismatch,13
+2026-06-14,File format error,8
+2026-06-14,Rejected by issuer,5
+2026-06-14,Duplicate transaction,3
+2026-06-14,Timeout,12
+2026-06-15,Account not found,19
+2026-06-15,Amount mismatch,11
+2026-06-15,File format error,10
+2026-06-15,Rejected by issuer,8
+2026-06-15,Duplicate transaction,3
+2026-06-15,Timeout,14
+2026-06-16,Account not found,16
+2026-06-16,Amount mismatch,8
+2026-06-16,File format error,6
+2026-06-16,Rejected by issuer,5
+2026-06-16,Duplicate transaction,2
+2026-06-16,Timeout,8
+2026-06-17,Account not found,24
+2026-06-17,Amount mismatch,15
+2026-06-17,File format error,14
+2026-06-17,Rejected by issuer,9
+2026-06-17,Duplicate transaction,4
+2026-06-17,Timeout,10
+2026-06-18,Account not found,21
+2026-06-18,Amount mismatch,16
+2026-06-18,File format error,13
+2026-06-18,Rejected by issuer,7
+2026-06-18,Duplicate transaction,3
+2026-06-18,Timeout,12
+2026-06-19,Account not found,35
+2026-06-19,Amount mismatch,14
+2026-06-19,File format error,16
+2026-06-19,Rejected by issuer,11
+2026-06-19,Duplicate transaction,5
+2026-06-19,Timeout,9
+2026-06-20,Account not found,25
+2026-06-20,Amount mismatch,15
+2026-06-20,File format error,13
+2026-06-20,Rejected by issuer,9
+2026-06-20,Duplicate transaction,4
+2026-06-20,Timeout,9
+2026-06-21,Account not found,20
+2026-06-21,Amount mismatch,15
+2026-06-21,File format error,9
+2026-06-21,Rejected by issuer,7
+2026-06-21,Duplicate transaction,4
+2026-06-21,Timeout,15
+2026-06-22,Account not found,31
+2026-06-22,Amount mismatch,14
+2026-06-22,File format error,16
+2026-06-22,Rejected by issuer,8
+2026-06-22,Duplicate transaction,3
+2026-06-22,Timeout,10
+2026-06-23,Account not found,33
+2026-06-23,Amount mismatch,19
+2026-06-23,File format error,15
+2026-06-23,Rejected by issuer,9
+2026-06-23,Duplicate transaction,5
+2026-06-23,Timeout,9
+2026-06-24,Account not found,25
+2026-06-24,Amount mismatch,13
+2026-06-24,File format error,11
+2026-06-24,Rejected by issuer,8
+2026-06-24,Duplicate transaction,3
+2026-06-24,Timeout,5
+2026-06-25,Account not found,23
+2026-06-25,Amount mismatch,16
+2026-06-25,File format error,16
+2026-06-25,Rejected by issuer,8
+2026-06-25,Duplicate transaction,5
+2026-06-25,Timeout,18
+2026-06-26,Account not found,32
+2026-06-26,Amount mismatch,21
+2026-06-26,File format error,12
+2026-06-26,Rejected by issuer,11
+2026-06-26,Duplicate transaction,6
+2026-06-26,Timeout,15
+2026-06-27,Account not found,28
+2026-06-27,Amount mismatch,15
+2026-06-27,File format error,12
+2026-06-27,Rejected by issuer,9
+2026-06-27,Duplicate transaction,5
+2026-06-27,Timeout,22
+2026-06-28,Account not found,18
+2026-06-28,Amount mismatch,10
+2026-06-28,File format error,10
+2026-06-28,Rejected by issuer,7
+2026-06-28,Duplicate transaction,3
+2026-06-28,Timeout,11
+2026-06-29,Account not found,30
+2026-06-29,Amount mismatch,23
+2026-06-29,File format error,16
+2026-06-29,Rejected by issuer,13
+2026-06-29,Duplicate transaction,5
+2026-06-29,Timeout,14
+2026-06-30,Account not found,23
+2026-06-30,Amount mismatch,14
+2026-06-30,File format error,10
+2026-06-30,Rejected by issuer,8
+2026-06-30,Duplicate transaction,4
+2026-06-30,Timeout,4

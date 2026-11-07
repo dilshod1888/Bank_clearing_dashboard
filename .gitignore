@@ -1,0 +1,5 @@
+.env
+*.pbix
+__pycache__/
+.venv/
+data/synthetic_clearing_transactions.csv

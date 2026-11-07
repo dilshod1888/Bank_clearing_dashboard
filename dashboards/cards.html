@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Card Transactions · Payments Analytics</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+<main>
+  <div class="top">
+    <div>
+      <h1>Card Transactions Overview</h1>
+      <div class="sub" id="sub"></div>
+    </div>
+    <div class="filters">
+      <label>Period <select id="period"></select></label>
+      <label>Card type <select id="card"></select></label>
+    </div>
+  </div>
+
+  <section class="grid kpis" id="kpis"></section>
+
+  <section class="grid row">
+    <div class="panel c4">
+      <h2>Amount share by card type <span>UZS</span></h2>
+      <div class="donut-wrap"><div class="chart" id="donut"></div><div class="donut-list" id="donutList"></div></div>
+    </div>
+    <div class="panel c5">
+      <h2>Transaction amount trend <span id="trendUnit"></span></h2>
+      <div class="legend" id="trendLegend"></div>
+      <div class="chart" id="trend"></div>
+    </div>
+    <div class="panel c3">
+      <h2>Avg daily transactions <span>count</span></h2>
+      <div class="chart" id="daily"></div>
+      <div class="note">Average number of transactions per day in the selected period.</div>
+    </div>
+  </section>
+
+  <section class="grid row">
+    <div class="panel c8">
+      <h2>KPIs by card type <span>selected period</span></h2>
+      <div class="scroll"><table id="cardTable"></table></div>
+    </div>
+    <div class="panel c4">
+      <h2>Monthly transaction count <span>stacked by card</span></h2>
+      <div class="legend" id="monthLegend"></div>
+      <div class="chart" id="monthly"></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Key insights <span>calculated from the data</span></h2>
+    <div class="insights" id="insights"></div>
+  </section>
+</main>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+<script>
+const { D, COLORS, nf, short, uzs, pct, mlabel, periodRange, comparison, inRange, daysIn, delta, Charts, legend, sumTx, buckets } = App;
+App.layout("cards.html");
+
+const state = { period: "all", card: -1 };
+App.periodSelect(document.getElementById("period"), (v) => { state.period = v; render(); });
+const cardSel = document.getElementById("card");
+cardSel.innerHTML = `<option value="-1">All card types</option>` + D.cards.map((c, i) => `<option value="${i}">${c}</option>`).join("");
+cardSel.addEventListener("change", () => { state.card = +cardSel.value; render(); });
+
+const cardOk = (r) => state.card < 0 || r[1] === state.card;
+
+function kpi(label, value, unit, deltaHtml, cmpLabel) {
+  return `<div class="panel kpi"><div class="label">${label}</div>
+    <div class="value">${value}<span class="unit">${unit || ""}</span></div>
+    <div class="delta">${deltaHtml || "&nbsp;"}${deltaHtml ? `<em>${cmpLabel}</em>` : ""}</div></div>`;
+}
+
+function render() {
+  const range = periodRange(state.period);
+  const cmp = comparison(state.period);
+  const days = daysIn(range);
+  const cur = sumTx((r) => inRange(r[0], range) && cardOk(r));
+  const prev = cmp ? sumTx((r) => inRange(r[0], cmp.prev) && cardOk(r)) : null;
+  const curC = cmp ? sumTx((r) => inRange(r[0], cmp.cur) && cardOk(r)) : null;
+  const pd = cmp ? [daysIn(cmp.cur), daysIn(cmp.prev)] : null;
+  const succ = (o) => (1 - o.failed / o.count) * 100;
+
+  document.getElementById("sub").textContent =
+    `${range.label} · ${state.card < 0 ? "All card types" : D.cards[state.card]} · synthetic data, amounts in UZS`;
+
+  document.getElementById("kpis").innerHTML = [
+    kpi("Transactions", short(cur.count, 2), "", cmp && delta(curC.count, prev.count, { perDay: pd }), cmp?.label),
+    kpi("Transaction amount", short(cur.amount, 1), " UZS", cmp && delta(curC.amount, prev.amount, { perDay: pd }), cmp?.label),
+    kpi("Average ticket", nf(cur.amount / cur.count / 1000, 1), "K UZS", cmp && delta(curC.amount / curC.count, prev.amount / prev.count), cmp?.label),
+    kpi("Success rate", pct(succ(cur), 2), "", cmp && delta(succ(curC), succ(prev)), cmp?.label),
+    kpi("Commission income", short(cur.commission, 1), " UZS", cmp && delta(curC.commission, prev.commission, { perDay: pd }), cmp?.label),
+    kpi("Failed transactions", nf(cur.failed), "", cmp && delta(curC.failed, prev.failed, { invert: true, perDay: pd }), cmp?.label),
+  ].join("");
+
+  // per-card aggregates (always all cards for comparison visuals)
+  const per = D.cards.map((c, i) => ({ card: c, i, ...sumTx((r) => r[1] === i && inRange(r[0], range)) }));
+  const perPrev = cmp ? D.cards.map((c, i) => sumTx((r) => r[1] === i && inRange(r[0], cmp.prev))) : null;
+  const totAmt = per.reduce((a, b) => a + b.amount, 0), totCnt = per.reduce((a, b) => a + b.count, 0);
+
+  Charts.donut(document.getElementById("donut"), document.getElementById("donutList"),
+    per.map((p) => ({ label: p.card, value: p.amount, color: COLORS[p.card] })),
+    { center: short(totAmt, 1), centerSub: "UZS total", fmt: (v) => short(v, 1) });
+
+  // trend
+  const b = buckets(range);
+  const shown = per.filter((p) => state.card < 0 || p.i === state.card);
+  const series = shown.map((p) => ({
+    name: p.card, color: COLORS[p.card],
+    // weekly buckets are normalised to 7 days so a partial last week does not look like a drop
+    values: b.list.map((bk) => sumTx((r) => r[1] === p.i && r[0] >= bk.from && r[0] <= bk.to).amount
+      * (b.weekly ? 7 / (bk.to - bk.from + 1) : 1)),
+  }));
+  document.getElementById("trendUnit").textContent = b.weekly ? "weekly, UZS" : "daily, UZS";
+  legend(document.getElementById("trendLegend"), series);
+  Charts.lines(document.getElementById("trend"), b.list.map((x) => x.label), series, { fmt: (v) => short(v, 0), height: 210 });
+
+  Charts.hbars(document.getElementById("daily"),
+    per.map((p) => ({ label: p.card, value: p.count / days, color: COLORS[p.card] })), { fmt: (v) => nf(v) });
+
+  // table
+  const maxAmt = Math.max(...per.map((p) => p.amount));
+  document.getElementById("cardTable").innerHTML = `
+    <thead><tr><th>Card type</th><th>Transactions</th><th>Share</th><th>Amount (UZS)</th><th>Share</th>
+      <th>Avg ticket</th><th>Success rate</th><th>Commission</th>${cmp ? `<th>Amount ${cmp.label}</th>` : ""}</tr></thead>
+    <tbody>${per.map((p, k) => `<tr>
+      <td><i class="swatch" style="background:${COLORS[p.card]}"></i>${p.card}</td>
+      <td>${nf(p.count)}</td><td>${pct((p.count / totCnt) * 100)}</td>
+      <td><div class="bar-cell"><span style="width:${(p.amount / maxAmt) * 70}px;background:${COLORS[p.card]}55"></span>${short(p.amount, 1)}</div></td>
+      <td>${pct((p.amount / totAmt) * 100)}</td>
+      <td>${nf(p.amount / p.count / 1000, 1)}K</td>
+      <td>${pct(succ(p), 2)}</td><td>${short(p.commission, 1)}</td>
+      ${cmp ? `<td>${delta(sumTx((r) => r[1] === p.i && inRange(r[0], cmp.cur)).amount, perPrev[k].amount, { perDay: pd })}</td>` : ""}
+    </tr>`).join("")}</tbody>
+    <tfoot><tr><td>Total</td><td>${nf(totCnt)}</td><td>100%</td><td>${short(totAmt, 1)}</td><td>100%</td>
+      <td>${nf(totAmt / totCnt / 1000, 1)}K</td>
+      <td>${pct((1 - per.reduce((a, b) => a + b.failed, 0) / totCnt) * 100, 2)}</td>
+      <td>${short(per.reduce((a, b) => a + b.commission, 0), 1)}</td>${cmp ? "<td></td>" : ""}</tr></tfoot>`;
+
+  // monthly stacked (whole half-year, highlights trend regardless of period)
+  const monthIdx = D.months.map((m) => periodRange(m));
+  const mseries = D.cards.map((c, i) => ({
+    name: c, color: COLORS[c], values: monthIdx.map((r) => sumTx((x) => x[1] === i && inRange(x[0], r)).count),
+  })).filter((s, i) => state.card < 0 || i === state.card);
+  legend(document.getElementById("monthLegend"), mseries);
+  Charts.bars(document.getElementById("monthly"), D.months.map(mlabel), mseries, { height: 210, fmt: (v) => short(v, 1) });
+
+  // insights
+  const lead = [...per].sort((a, b) => b.amount - a.amount)[0];
+  const best = [...per].sort((a, b) => succ(b) - succ(a))[0];
+  const worst = [...per].sort((a, b) => succ(a) - succ(b))[0];
+  const growth = cmp ? ((curC.amount / pd[0]) / (prev.amount / pd[1]) - 1) * 100 : null;
+  const premium = per.filter((p) => ["VISA", "MASTERCARD", "UNIONPAY"].includes(p.card));
+  const premShareCnt = premium.reduce((a, b) => a + b.count, 0) / totCnt * 100;
+  const premShareComm = premium.reduce((a, b) => a + b.commission, 0) / per.reduce((a, b) => a + b.commission, 0) * 100;
+  const items = [
+    ["#2563eb", "1", `<b>${lead.card}</b> leads with ${pct((lead.amount / totAmt) * 100)} of transaction amount${growth != null ? `; total daily volume changed ${growth >= 0 ? "+" : ""}${nf(growth, 1)}% ${cmp.label}` : ""}.`],
+    ["#7c3aed", "2", `International cards make up only ${pct(premShareCnt)} of transactions but bring <b>${pct(premShareComm)}</b> of commission income.`],
+    ["#16a34a", "3", `Success rate ranges from ${pct(succ(worst), 2)} (${worst.card}) to ${pct(succ(best), 2)} (${best.card}); ${worst.card} failures are the first to investigate.`],
+  ];
+  document.getElementById("insights").innerHTML = items.map(([c, n, t]) =>
+    `<div class="insight"><span class="dot" style="background:${c}">${n}</span><div>${t}</div></div>`).join("");
+}
+render();
+App.rerenderOnResize(render);
+</script>
+</body>
+</html>

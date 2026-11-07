@@ -1,0 +1,1087 @@
+date,account,balance_mln_uzs
+2026-01-01,10101 Settlement account,72480.4
+2026-01-01,10301 Correspondent account,26139.3
+2026-01-01,16101 Clearing suspense,-41797.6
+2026-01-01,16103 Transit account,-124843.3
+2026-01-01,16301 Due from other banks,4182.9
+2026-01-01,45405 Fee income,2539.8
+2026-01-02,10101 Settlement account,67299.2
+2026-01-02,10301 Correspondent account,27423.6
+2026-01-02,16101 Clearing suspense,-40554.0
+2026-01-02,16103 Transit account,-122106.2
+2026-01-02,16301 Due from other banks,4122.0
+2026-01-02,45405 Fee income,2156.7
+2026-01-03,10101 Settlement account,72866.5
+2026-01-03,10301 Correspondent account,23315.0
+2026-01-03,16101 Clearing suspense,-43725.8
+2026-01-03,16103 Transit account,-114608.8
+2026-01-03,16301 Due from other banks,3592.0
+2026-01-03,45405 Fee income,2199.7
+2026-01-04,10101 Settlement account,73259.3
+2026-01-04,10301 Correspondent account,23353.5
+2026-01-04,16101 Clearing suspense,-47121.4
+2026-01-04,16103 Transit account,-111055.0
+2026-01-04,16301 Due from other banks,4107.2
+2026-01-04,45405 Fee income,2095.4
+2026-01-05,10101 Settlement account,72823.2
+2026-01-05,10301 Correspondent account,22216.5
+2026-01-05,16101 Clearing suspense,-43936.1
+2026-01-05,16103 Transit account,-111479.5
+2026-01-05,16301 Due from other banks,3708.4
+2026-01-05,45405 Fee income,2434.9
+2026-01-06,10101 Settlement account,74941.0
+2026-01-06,10301 Correspondent account,17407.6
+2026-01-06,16101 Clearing suspense,-45281.2
+2026-01-06,16103 Transit account,-106417.9
+2026-01-06,16301 Due from other banks,3544.7
+2026-01-06,45405 Fee income,2572.8
+2026-01-07,10101 Settlement account,71194.5
+2026-01-07,10301 Correspondent account,18632.1
+2026-01-07,16101 Clearing suspense,-44946.7
+2026-01-07,16103 Transit account,-101262.9
+2026-01-07,16301 Due from other banks,3294.5
+2026-01-07,45405 Fee income,3006.2
+2026-01-08,10101 Settlement account,63099.1
+2026-01-08,10301 Correspondent account,15513.3
+2026-01-08,16101 Clearing suspense,-47820.4
+2026-01-08,16103 Transit account,-114004.3
+2026-01-08,16301 Due from other banks,3680.1
+2026-01-08,45405 Fee income,3056.6
+2026-01-09,10101 Settlement account,71397.6
+2026-01-09,10301 Correspondent account,15870.0
+2026-01-09,16101 Clearing suspense,-45537.1
+2026-01-09,16103 Transit account,-115706.8
+2026-01-09,16301 Due from other banks,3516.7
+2026-01-09,45405 Fee income,2868.1
+2026-01-10,10101 Settlement account,67493.0
+2026-01-10,10301 Correspondent account,12999.0
+2026-01-10,16101 Clearing suspense,-38098.5
+2026-01-10,16103 Transit account,-120226.9
+2026-01-10,16301 Due from other banks,3644.6
+2026-01-10,45405 Fee income,3397.2
+2026-01-11,10101 Settlement account,70306.4
+2026-01-11,10301 Correspondent account,11645.6
+2026-01-11,16101 Clearing suspense,-36834.9
+2026-01-11,16103 Transit account,-121361.1
+2026-01-11,16301 Due from other banks,3557.6
+2026-01-11,45405 Fee income,3553.4
+2026-01-12,10101 Settlement account,72771.3
+2026-01-12,10301 Correspondent account,10099.8
+2026-01-12,16101 Clearing suspense,-38776.3
+2026-01-12,16103 Transit account,-133830.3
+2026-01-12,16301 Due from other banks,4086.5
+2026-01-12,45405 Fee income,3446.7
+2026-01-13,10101 Settlement account,70272.5
+2026-01-13,10301 Correspondent account,4755.4
+2026-01-13,16101 Clearing suspense,-36516.2
+2026-01-13,16103 Transit account,-152264.0
+2026-01-13,16301 Due from other banks,4567.0
+2026-01-13,45405 Fee income,3355.0
+2026-01-14,10101 Settlement account,71217.2
+2026-01-14,10301 Correspondent account,6680.8
+2026-01-14,16101 Clearing suspense,-41870.4
+2026-01-14,16103 Transit account,-154624.7
+2026-01-14,16301 Due from other banks,3995.7
+2026-01-14,45405 Fee income,3578.1
+2026-01-15,10101 Settlement account,50640.4
+2026-01-15,10301 Correspondent account,7225.1
+2026-01-15,16101 Clearing suspense,-39607.2
+2026-01-15,16103 Transit account,-150435.5
+2026-01-15,16301 Due from other banks,4816.9
+2026-01-15,45405 Fee income,3464.0
+2026-01-16,10101 Settlement account,48298.6
+2026-01-16,10301 Correspondent account,9531.2
+2026-01-16,16101 Clearing suspense,-46947.4
+2026-01-16,16103 Transit account,-146744.5
+2026-01-16,16301 Due from other banks,5135.3
+2026-01-16,45405 Fee income,3543.2
+2026-01-17,10101 Settlement account,44930.8
+2026-01-17,10301 Correspondent account,9374.4
+2026-01-17,16101 Clearing suspense,-48852.6
+2026-01-17,16103 Transit account,-172664.7
+2026-01-17,16301 Due from other banks,6070.3
+2026-01-17,45405 Fee income,3114.4
+2026-01-18,10101 Settlement account,50558.3
+2026-01-18,10301 Correspondent account,8700.5
+2026-01-18,16101 Clearing suspense,-49837.4
+2026-01-18,16103 Transit account,-176225.1
+2026-01-18,16301 Due from other banks,5978.7
+2026-01-18,45405 Fee income,3112.6
+2026-01-19,10101 Settlement account,50524.6
+2026-01-19,10301 Correspondent account,8529.8
+2026-01-19,16101 Clearing suspense,-50237.2
+2026-01-19,16103 Transit account,-180897.8
+2026-01-19,16301 Due from other banks,6441.1
+2026-01-19,45405 Fee income,3121.4
+2026-01-20,10101 Settlement account,48502.5
+2026-01-20,10301 Correspondent account,11638.2
+2026-01-20,16101 Clearing suspense,-50515.3
+2026-01-20,16103 Transit account,-166841.9
+2026-01-20,16301 Due from other banks,6816.8
+2026-01-20,45405 Fee income,3199.0
+2026-01-21,10101 Settlement account,41848.9
+2026-01-21,10301 Correspondent account,9788.0
+2026-01-21,16101 Clearing suspense,-44729.5
+2026-01-21,16103 Transit account,-162624.2
+2026-01-21,16301 Due from other banks,6327.0
+2026-01-21,45405 Fee income,3384.5
+2026-01-22,10101 Settlement account,41248.1
+2026-01-22,10301 Correspondent account,7123.0
+2026-01-22,16101 Clearing suspense,-41896.2
+2026-01-22,16103 Transit account,-165832.0
+2026-01-22,16301 Due from other banks,6159.8
+2026-01-22,45405 Fee income,2959.9
+2026-01-23,10101 Settlement account,33154.6
+2026-01-23,10301 Correspondent account,6744.5
+2026-01-23,16101 Clearing suspense,-44477.6
+2026-01-23,16103 Transit account,-172622.8
+2026-01-23,16301 Due from other banks,6005.3
+2026-01-23,45405 Fee income,2790.7
+2026-01-24,10101 Settlement account,42861.7
+2026-01-24,10301 Correspondent account,6774.1
+2026-01-24,16101 Clearing suspense,-38496.0
+2026-01-24,16103 Transit account,-174897.8
+2026-01-24,16301 Due from other banks,6784.1
+2026-01-24,45405 Fee income,2452.7
+2026-01-25,10101 Settlement account,42152.0
+2026-01-25,10301 Correspondent account,6902.7
+2026-01-25,16101 Clearing suspense,-41817.7
+2026-01-25,16103 Transit account,-177483.2
+2026-01-25,16301 Due from other banks,6600.7
+2026-01-25,45405 Fee income,2409.3
+2026-01-26,10101 Settlement account,49226.6
+2026-01-26,10301 Correspondent account,13481.6
+2026-01-26,16101 Clearing suspense,-37455.1
+2026-01-26,16103 Transit account,-165125.5
+2026-01-26,16301 Due from other banks,6446.3
+2026-01-26,45405 Fee income,2099.9
+2026-01-27,10101 Settlement account,66072.9
+2026-01-27,10301 Correspondent account,15132.7
+2026-01-27,16101 Clearing suspense,-37362.7
+2026-01-27,16103 Transit account,-174459.7
+2026-01-27,16301 Due from other banks,5381.1
+2026-01-27,45405 Fee income,1967.5
+2026-01-28,10101 Settlement account,58873.9
+2026-01-28,10301 Correspondent account,12040.5
+2026-01-28,16101 Clearing suspense,-38233.7
+2026-01-28,16103 Transit account,-173670.3
+2026-01-28,16301 Due from other banks,4568.2
+2026-01-28,45405 Fee income,1922.7
+2026-01-29,10101 Settlement account,58063.7
+2026-01-29,10301 Correspondent account,9954.2
+2026-01-29,16101 Clearing suspense,-29282.7
+2026-01-29,16103 Transit account,-174590.4
+2026-01-29,16301 Due from other banks,4062.9
+2026-01-29,45405 Fee income,1744.7
+2026-01-30,10101 Settlement account,63242.0
+2026-01-30,10301 Correspondent account,11044.6
+2026-01-30,16101 Clearing suspense,-28985.1
+2026-01-30,16103 Transit account,-188100.3
+2026-01-30,16301 Due from other banks,4360.9
+2026-01-30,45405 Fee income,1855.4
+2026-01-31,10101 Settlement account,60787.7
+2026-01-31,10301 Correspondent account,5186.1
+2026-01-31,16101 Clearing suspense,-23380.8
+2026-01-31,16103 Transit account,-161952.3
+2026-01-31,16301 Due from other banks,2696.6
+2026-01-31,45405 Fee income,1958.2
+2026-02-01,10101 Settlement account,60807.4
+2026-02-01,10301 Correspondent account,3061.7
+2026-02-01,16101 Clearing suspense,-22926.1
+2026-02-01,16103 Transit account,-161973.2
+2026-02-01,16301 Due from other banks,2716.2
+2026-02-01,45405 Fee income,2086.5
+2026-02-02,10101 Settlement account,69370.8
+2026-02-02,10301 Correspondent account,4776.6
+2026-02-02,16101 Clearing suspense,-22929.3
+2026-02-02,16103 Transit account,-171470.6
+2026-02-02,16301 Due from other banks,2379.6
+2026-02-02,45405 Fee income,1674.3
+2026-02-03,10101 Settlement account,69551.9
+2026-02-03,10301 Correspondent account,-2766.3
+2026-02-03,16101 Clearing suspense,-22782.6
+2026-02-03,16103 Transit account,-169194.2
+2026-02-03,16301 Due from other banks,2889.5
+2026-02-03,45405 Fee income,1252.9
+2026-02-04,10101 Settlement account,67300.2
+2026-02-04,10301 Correspondent account,-6741.6
+2026-02-04,16101 Clearing suspense,-18410.5
+2026-02-04,16103 Transit account,-176280.6
+2026-02-04,16301 Due from other banks,2796.6
+2026-02-04,45405 Fee income,1475.7
+2026-02-05,10101 Settlement account,72995.9
+2026-02-05,10301 Correspondent account,-2639.4
+2026-02-05,16101 Clearing suspense,-25528.3
+2026-02-05,16103 Transit account,-170723.2
+2026-02-05,16301 Due from other banks,1063.7
+2026-02-05,45405 Fee income,1361.6
+2026-02-06,10101 Settlement account,76736.2
+2026-02-06,10301 Correspondent account,-3413.1
+2026-02-06,16101 Clearing suspense,-27004.1
+2026-02-06,16103 Transit account,-169184.9
+2026-02-06,16301 Due from other banks,343.6
+2026-02-06,45405 Fee income,1413.3
+2026-02-07,10101 Settlement account,84550.7
+2026-02-07,10301 Correspondent account,-7808.9
+2026-02-07,16101 Clearing suspense,-31158.0
+2026-02-07,16103 Transit account,-163378.2
+2026-02-07,16301 Due from other banks,-455.8
+2026-02-07,45405 Fee income,1546.6
+2026-02-08,10101 Settlement account,84153.6
+2026-02-08,10301 Correspondent account,-8214.5
+2026-02-08,16101 Clearing suspense,-32028.0
+2026-02-08,16103 Transit account,-164603.9
+2026-02-08,16301 Due from other banks,438.0
+2026-02-08,45405 Fee income,1757.5
+2026-02-09,10101 Settlement account,83199.9
+2026-02-09,10301 Correspondent account,-4576.1
+2026-02-09,16101 Clearing suspense,-37674.9
+2026-02-09,16103 Transit account,-150340.6
+2026-02-09,16301 Due from other banks,653.3
+2026-02-09,45405 Fee income,1615.5
+2026-02-10,10101 Settlement account,81498.3
+2026-02-10,10301 Correspondent account,-3072.0
+2026-02-10,16101 Clearing suspense,-35912.3
+2026-02-10,16103 Transit account,-145838.6
+2026-02-10,16301 Due from other banks,1557.6
+2026-02-10,45405 Fee income,1592.5
+2026-02-11,10101 Settlement account,86182.0
+2026-02-11,10301 Correspondent account,-3161.4
+2026-02-11,16101 Clearing suspense,-34047.0
+2026-02-11,16103 Transit account,-128984.0
+2026-02-11,16301 Due from other banks,-132.1
+2026-02-11,45405 Fee income,2022.2
+2026-02-12,10101 Settlement account,86079.3
+2026-02-12,10301 Correspondent account,-1167.6
+2026-02-12,16101 Clearing suspense,-23504.0
+2026-02-12,16103 Transit account,-139043.6
+2026-02-12,16301 Due from other banks,-100.1
+2026-02-12,45405 Fee income,2076.8
+2026-02-13,10101 Settlement account,95396.0
+2026-02-13,10301 Correspondent account,-4015.0
+2026-02-13,16101 Clearing suspense,-18223.9
+2026-02-13,16103 Transit account,-139250.6
+2026-02-13,16301 Due from other banks,19.8
+2026-02-13,45405 Fee income,1896.5
+2026-02-14,10101 Settlement account,96138.3
+2026-02-14,10301 Correspondent account,-9169.8
+2026-02-14,16101 Clearing suspense,-17991.1
+2026-02-14,16103 Transit account,-135610.8
+2026-02-14,16301 Due from other banks,-474.8
+2026-02-14,45405 Fee income,1900.8
+2026-02-15,10101 Settlement account,97693.5
+2026-02-15,10301 Correspondent account,-8133.4
+2026-02-15,16101 Clearing suspense,-18105.4
+2026-02-15,16103 Transit account,-138777.2
+2026-02-15,16301 Due from other banks,-115.6
+2026-02-15,45405 Fee income,2019.8
+2026-02-16,10101 Settlement account,101120.3
+2026-02-16,10301 Correspondent account,-2960.2
+2026-02-16,16101 Clearing suspense,-30423.5
+2026-02-16,16103 Transit account,-150593.7
+2026-02-16,16301 Due from other banks,1385.4
+2026-02-16,45405 Fee income,2214.2
+2026-02-17,10101 Settlement account,108368.6
+2026-02-17,10301 Correspondent account,-8478.7
+2026-02-17,16101 Clearing suspense,-39280.3
+2026-02-17,16103 Transit account,-138671.3
+2026-02-17,16301 Due from other banks,-347.7
+2026-02-17,45405 Fee income,2559.8
+2026-02-18,10101 Settlement account,111012.5
+2026-02-18,10301 Correspondent account,-4948.7
+2026-02-18,16101 Clearing suspense,-37499.2
+2026-02-18,16103 Transit account,-110717.6
+2026-02-18,16301 Due from other banks,424.8
+2026-02-18,45405 Fee income,2811.0
+2026-02-19,10101 Settlement account,107025.6
+2026-02-19,10301 Correspondent account,-2361.3
+2026-02-19,16101 Clearing suspense,-36355.8
+2026-02-19,16103 Transit account,-126149.8
+2026-02-19,16301 Due from other banks,494.0
+2026-02-19,45405 Fee income,2970.6
+2026-02-20,10101 Settlement account,109970.6
+2026-02-20,10301 Correspondent account,-8453.6
+2026-02-20,16101 Clearing suspense,-35029.6
+2026-02-20,16103 Transit account,-113074.5
+2026-02-20,16301 Due from other banks,1089.3
+2026-02-20,45405 Fee income,3387.8
+2026-02-21,10101 Settlement account,110466.6
+2026-02-21,10301 Correspondent account,-7595.0
+2026-02-21,16101 Clearing suspense,-32284.1
+2026-02-21,16103 Transit account,-126531.9
+2026-02-21,16301 Due from other banks,1759.9
+2026-02-21,45405 Fee income,3028.6
+2026-02-22,10101 Settlement account,110339.6
+2026-02-22,10301 Correspondent account,-7926.1
+2026-02-22,16101 Clearing suspense,-34487.8
+2026-02-22,16103 Transit account,-127801.0
+2026-02-22,16301 Due from other banks,1904.2
+2026-02-22,45405 Fee income,3095.1
+2026-02-23,10101 Settlement account,111951.9
+2026-02-23,10301 Correspondent account,-8227.6
+2026-02-23,16101 Clearing suspense,-34579.1
+2026-02-23,16103 Transit account,-129296.9
+2026-02-23,16301 Due from other banks,2126.6
+2026-02-23,45405 Fee income,3292.3
+2026-02-24,10101 Settlement account,112713.1
+2026-02-24,10301 Correspondent account,-13033.9
+2026-02-24,16101 Clearing suspense,-38657.1
+2026-02-24,16103 Transit account,-137700.9
+2026-02-24,16301 Due from other banks,2366.9
+2026-02-24,45405 Fee income,3144.4
+2026-02-25,10101 Settlement account,111487.1
+2026-02-25,10301 Correspondent account,-9837.5
+2026-02-25,16101 Clearing suspense,-38516.7
+2026-02-25,16103 Transit account,-141566.5
+2026-02-25,16301 Due from other banks,1714.0
+2026-02-25,45405 Fee income,3393.8
+2026-02-26,10101 Settlement account,97494.9
+2026-02-26,10301 Correspondent account,-11929.1
+2026-02-26,16101 Clearing suspense,-38986.8
+2026-02-26,16103 Transit account,-135433.4
+2026-02-26,16301 Due from other banks,2606.7
+2026-02-26,45405 Fee income,3599.6
+2026-02-27,10101 Settlement account,95314.8
+2026-02-27,10301 Correspondent account,-16253.9
+2026-02-27,16101 Clearing suspense,-38920.8
+2026-02-27,16103 Transit account,-149300.5
+2026-02-27,16301 Due from other banks,4278.4
+2026-02-27,45405 Fee income,4033.7
+2026-02-28,10101 Settlement account,89573.0
+2026-02-28,10301 Correspondent account,-17593.3
+2026-02-28,16101 Clearing suspense,-25849.3
+2026-02-28,16103 Transit account,-146879.0
+2026-02-28,16301 Due from other banks,3765.0
+2026-02-28,45405 Fee income,3895.0
+2026-03-01,10101 Settlement account,90804.4
+2026-03-01,10301 Correspondent account,-18436.3
+2026-03-01,16101 Clearing suspense,-26936.3
+2026-03-01,16103 Transit account,-141399.5
+2026-03-01,16301 Due from other banks,3961.2
+2026-03-01,45405 Fee income,3981.6
+2026-03-02,10101 Settlement account,86754.7
+2026-03-02,10301 Correspondent account,-21844.6
+2026-03-02,16101 Clearing suspense,-25845.4
+2026-03-02,16103 Transit account,-129204.4
+2026-03-02,16301 Due from other banks,4380.3
+2026-03-02,45405 Fee income,4179.1
+2026-03-03,10101 Settlement account,82233.5
+2026-03-03,10301 Correspondent account,-17282.2
+2026-03-03,16101 Clearing suspense,-29518.3
+2026-03-03,16103 Transit account,-136499.3
+2026-03-03,16301 Due from other banks,2738.0
+2026-03-03,45405 Fee income,3559.7
+2026-03-04,10101 Settlement account,75955.3
+2026-03-04,10301 Correspondent account,-19588.6
+2026-03-04,16101 Clearing suspense,-31687.6
+2026-03-04,16103 Transit account,-132028.1
+2026-03-04,16301 Due from other banks,2675.3
+2026-03-04,45405 Fee income,3440.5
+2026-03-05,10101 Settlement account,80493.2
+2026-03-05,10301 Correspondent account,-19669.4
+2026-03-05,16101 Clearing suspense,-31312.4
+2026-03-05,16103 Transit account,-134547.2
+2026-03-05,16301 Due from other banks,1696.2
+2026-03-05,45405 Fee income,3241.9
+2026-03-06,10101 Settlement account,69286.5
+2026-03-06,10301 Correspondent account,-24057.5
+2026-03-06,16101 Clearing suspense,-33941.6
+2026-03-06,16103 Transit account,-144443.2
+2026-03-06,16301 Due from other banks,1831.2
+2026-03-06,45405 Fee income,3435.4
+2026-03-07,10101 Settlement account,68839.7
+2026-03-07,10301 Correspondent account,-24672.6
+2026-03-07,16101 Clearing suspense,-30720.8
+2026-03-07,16103 Transit account,-134194.5
+2026-03-07,16301 Due from other banks,1005.6
+2026-03-07,45405 Fee income,3697.4
+2026-03-08,10101 Settlement account,66190.7
+2026-03-08,10301 Correspondent account,-27208.5
+2026-03-08,16101 Clearing suspense,-29915.5
+2026-03-08,16103 Transit account,-139575.2
+2026-03-08,16301 Due from other banks,802.0
+2026-03-08,45405 Fee income,3582.3
+2026-03-09,10101 Settlement account,66923.0
+2026-03-09,10301 Correspondent account,-26825.6
+2026-03-09,16101 Clearing suspense,-39015.4
+2026-03-09,16103 Transit account,-132505.4
+2026-03-09,16301 Due from other banks,718.7
+2026-03-09,45405 Fee income,3284.6
+2026-03-10,10101 Settlement account,59774.2
+2026-03-10,10301 Correspondent account,-30960.3
+2026-03-10,16101 Clearing suspense,-43434.9
+2026-03-10,16103 Transit account,-126969.6
+2026-03-10,16301 Due from other banks,1777.7
+2026-03-10,45405 Fee income,3284.4
+2026-03-11,10101 Settlement account,46880.7
+2026-03-11,10301 Correspondent account,-29758.4
+2026-03-11,16101 Clearing suspense,-40501.9
+2026-03-11,16103 Transit account,-137506.6
+2026-03-11,16301 Due from other banks,1123.9
+2026-03-11,45405 Fee income,3263.5
+2026-03-12,10101 Settlement account,41220.4
+2026-03-12,10301 Correspondent account,-30829.6
+2026-03-12,16101 Clearing suspense,-48109.1
+2026-03-12,16103 Transit account,-150233.5
+2026-03-12,16301 Due from other banks,2236.3
+2026-03-12,45405 Fee income,3283.4
+2026-03-13,10101 Settlement account,42710.0
+2026-03-13,10301 Correspondent account,-29144.8
+2026-03-13,16101 Clearing suspense,-51036.1
+2026-03-13,16103 Transit account,-149347.7
+2026-03-13,16301 Due from other banks,2915.2
+2026-03-13,45405 Fee income,3447.8
+2026-03-14,10101 Settlement account,43034.8
+2026-03-14,10301 Correspondent account,-31492.9
+2026-03-14,16101 Clearing suspense,-52872.8
+2026-03-14,16103 Transit account,-156244.6
+2026-03-14,16301 Due from other banks,569.7
+2026-03-14,45405 Fee income,3131.0
+2026-03-15,10101 Settlement account,43504.1
+2026-03-15,10301 Correspondent account,-29953.7
+2026-03-15,16101 Clearing suspense,-55742.7
+2026-03-15,16103 Transit account,-161044.6
+2026-03-15,16301 Due from other banks,528.5
+2026-03-15,45405 Fee income,3208.2
+2026-03-16,10101 Settlement account,38271.4
+2026-03-16,10301 Correspondent account,-31006.3
+2026-03-16,16101 Clearing suspense,-55986.9
+2026-03-16,16103 Transit account,-170504.2
+2026-03-16,16301 Due from other banks,-680.5
+2026-03-16,45405 Fee income,3377.3
+2026-03-17,10101 Settlement account,36584.2
+2026-03-17,10301 Correspondent account,-30047.7
+2026-03-17,16101 Clearing suspense,-50840.5
+2026-03-17,16103 Transit account,-166915.8
+2026-03-17,16301 Due from other banks,-168.0
+2026-03-17,45405 Fee income,3424.2
+2026-03-18,10101 Settlement account,37316.6
+2026-03-18,10301 Correspondent account,-30473.6
+2026-03-18,16101 Clearing suspense,-45630.8
+2026-03-18,16103 Transit account,-154081.5
+2026-03-18,16301 Due from other banks,-753.6
+2026-03-18,45405 Fee income,3477.6
+2026-03-19,10101 Settlement account,35178.6
+2026-03-19,10301 Correspondent account,-32437.8
+2026-03-19,16101 Clearing suspense,-45820.4
+2026-03-19,16103 Transit account,-159680.1
+2026-03-19,16301 Due from other banks,-860.6
+2026-03-19,45405 Fee income,3116.8
+2026-03-20,10101 Settlement account,25156.4
+2026-03-20,10301 Correspondent account,-31175.8
+2026-03-20,16101 Clearing suspense,-44520.2
+2026-03-20,16103 Transit account,-164696.5
+2026-03-20,16301 Due from other banks,-944.3
+2026-03-20,45405 Fee income,2923.6
+2026-03-21,10101 Settlement account,20065.7
+2026-03-21,10301 Correspondent account,-31225.1
+2026-03-21,16101 Clearing suspense,-41560.8
+2026-03-21,16103 Transit account,-140368.1
+2026-03-21,16301 Due from other banks,-1736.3
+2026-03-21,45405 Fee income,3057.6
+2026-03-22,10101 Settlement account,20977.2
+2026-03-22,10301 Correspondent account,-32607.1
+2026-03-22,16101 Clearing suspense,-41383.5
+2026-03-22,16103 Transit account,-140423.4
+2026-03-22,16301 Due from other banks,-2045.2
+2026-03-22,45405 Fee income,3046.5
+2026-03-23,10101 Settlement account,19053.7
+2026-03-23,10301 Correspondent account,-37644.0
+2026-03-23,16101 Clearing suspense,-41489.0
+2026-03-23,16103 Transit account,-146717.0
+2026-03-23,16301 Due from other banks,-1706.0
+2026-03-23,45405 Fee income,2947.9
+2026-03-24,10101 Settlement account,13701.2
+2026-03-24,10301 Correspondent account,-30852.1
+2026-03-24,16101 Clearing suspense,-49317.0
+2026-03-24,16103 Transit account,-141857.1
+2026-03-24,16301 Due from other banks,-738.4
+2026-03-24,45405 Fee income,2726.8
+2026-03-25,10101 Settlement account,16101.5
+2026-03-25,10301 Correspondent account,-27414.1
+2026-03-25,16101 Clearing suspense,-52225.5
+2026-03-25,16103 Transit account,-135332.4
+2026-03-25,16301 Due from other banks,-362.6
+2026-03-25,45405 Fee income,2702.5
+2026-03-26,10101 Settlement account,27697.1
+2026-03-26,10301 Correspondent account,-27680.4
+2026-03-26,16101 Clearing suspense,-50759.1
+2026-03-26,16103 Transit account,-147607.3
+2026-03-26,16301 Due from other banks,238.6
+2026-03-26,45405 Fee income,2745.6
+2026-03-27,10101 Settlement account,33261.2
+2026-03-27,10301 Correspondent account,-25758.7
+2026-03-27,16101 Clearing suspense,-43715.8
+2026-03-27,16103 Transit account,-155601.0
+2026-03-27,16301 Due from other banks,-225.5
+2026-03-27,45405 Fee income,2556.7
+2026-03-28,10101 Settlement account,36246.2
+2026-03-28,10301 Correspondent account,-26203.9
+2026-03-28,16101 Clearing suspense,-45550.1
+2026-03-28,16103 Transit account,-141111.7
+2026-03-28,16301 Due from other banks,348.3
+2026-03-28,45405 Fee income,2195.8
+2026-03-29,10101 Settlement account,31227.8
+2026-03-29,10301 Correspondent account,-24773.5
+2026-03-29,16101 Clearing suspense,-44951.3
+2026-03-29,16103 Transit account,-143338.8
+2026-03-29,16301 Due from other banks,140.2
+2026-03-29,45405 Fee income,2216.3
+2026-03-30,10101 Settlement account,35865.6
+2026-03-30,10301 Correspondent account,-25318.6
+2026-03-30,16101 Clearing suspense,-50650.9
+2026-03-30,16103 Transit account,-139339.0
+2026-03-30,16301 Due from other banks,1597.5
+2026-03-30,45405 Fee income,2390.7
+2026-03-31,10101 Settlement account,43878.7
+2026-03-31,10301 Correspondent account,-28459.3
+2026-03-31,16101 Clearing suspense,-42877.1
+2026-03-31,16103 Transit account,-123695.5
+2026-03-31,16301 Due from other banks,2401.3
+2026-03-31,45405 Fee income,2452.4
+2026-04-01,10101 Settlement account,30501.7
+2026-04-01,10301 Correspondent account,-25656.4
+2026-04-01,16101 Clearing suspense,-40273.3
+2026-04-01,16103 Transit account,-120768.6
+2026-04-01,16301 Due from other banks,571.8
+2026-04-01,45405 Fee income,2325.7
+2026-04-02,10101 Settlement account,30107.1
+2026-04-02,10301 Correspondent account,-29079.2
+2026-04-02,16101 Clearing suspense,-49369.2
+2026-04-02,16103 Transit account,-132187.5
+2026-04-02,16301 Due from other banks,-58.6
+2026-04-02,45405 Fee income,2296.5
+2026-04-03,10101 Settlement account,25555.9
+2026-04-03,10301 Correspondent account,-28236.4
+2026-04-03,16101 Clearing suspense,-49555.0
+2026-04-03,16103 Transit account,-129667.0
+2026-04-03,16301 Due from other banks,404.2
+2026-04-03,45405 Fee income,2033.8
+2026-04-04,10101 Settlement account,19955.9
+2026-04-04,10301 Correspondent account,-30780.2
+2026-04-04,16101 Clearing suspense,-55904.4
+2026-04-04,16103 Transit account,-120678.1
+2026-04-04,16301 Due from other banks,1037.2
+2026-04-04,45405 Fee income,2120.1
+2026-04-05,10101 Settlement account,17045.3
+2026-04-05,10301 Correspondent account,-30855.4
+2026-04-05,16101 Clearing suspense,-58071.1
+2026-04-05,16103 Transit account,-123394.1
+2026-04-05,16301 Due from other banks,939.5
+2026-04-05,45405 Fee income,2299.0
+2026-04-06,10101 Settlement account,20819.7
+2026-04-06,10301 Correspondent account,-31393.5
+2026-04-06,16101 Clearing suspense,-54472.6
+2026-04-06,16103 Transit account,-126754.2
+2026-04-06,16301 Due from other banks,1548.4
+2026-04-06,45405 Fee income,2143.6
+2026-04-07,10101 Settlement account,12260.6
+2026-04-07,10301 Correspondent account,-32126.8
+2026-04-07,16101 Clearing suspense,-53493.7
+2026-04-07,16103 Transit account,-122971.5
+2026-04-07,16301 Due from other banks,2143.7
+2026-04-07,45405 Fee income,1803.8
+2026-04-08,10101 Settlement account,3041.8
+2026-04-08,10301 Correspondent account,-28271.4
+2026-04-08,16101 Clearing suspense,-55291.7
+2026-04-08,16103 Transit account,-123211.7
+2026-04-08,16301 Due from other banks,1882.9
+2026-04-08,45405 Fee income,1811.4
+2026-04-09,10101 Settlement account,378.8
+2026-04-09,10301 Correspondent account,-25825.0
+2026-04-09,16101 Clearing suspense,-58744.5
+2026-04-09,16103 Transit account,-129480.0
+2026-04-09,16301 Due from other banks,2652.5
+2026-04-09,45405 Fee income,1830.3
+2026-04-10,10101 Settlement account,1868.8
+2026-04-10,10301 Correspondent account,-27885.1
+2026-04-10,16101 Clearing suspense,-63039.4
+2026-04-10,16103 Transit account,-124039.1
+2026-04-10,16301 Due from other banks,1243.6
+2026-04-10,45405 Fee income,1954.8
+2026-04-11,10101 Settlement account,-6341.6
+2026-04-11,10301 Correspondent account,-30183.3
+2026-04-11,16101 Clearing suspense,-59383.3
+2026-04-11,16103 Transit account,-130622.6
+2026-04-11,16301 Due from other banks,1427.6
+2026-04-11,45405 Fee income,2091.6
+2026-04-12,10101 Settlement account,-9765.7
+2026-04-12,10301 Correspondent account,-27391.1
+2026-04-12,16101 Clearing suspense,-59274.2
+2026-04-12,16103 Transit account,-126666.6
+2026-04-12,16301 Due from other banks,1231.5
+2026-04-12,45405 Fee income,1981.8
+2026-04-13,10101 Settlement account,-1568.4
+2026-04-13,10301 Correspondent account,-27893.2
+2026-04-13,16101 Clearing suspense,-64101.1
+2026-04-13,16103 Transit account,-121047.4
+2026-04-13,16301 Due from other banks,1548.4
+2026-04-13,45405 Fee income,1955.5
+2026-04-14,10101 Settlement account,-10087.1
+2026-04-14,10301 Correspondent account,-29624.9
+2026-04-14,16101 Clearing suspense,-55464.8
+2026-04-14,16103 Transit account,-116747.1
+2026-04-14,16301 Due from other banks,2342.2
+2026-04-14,45405 Fee income,2193.2
+2026-04-15,10101 Settlement account,-9241.1
+2026-04-15,10301 Correspondent account,-27394.0
+2026-04-15,16101 Clearing suspense,-51436.3
+2026-04-15,16103 Transit account,-108628.0
+2026-04-15,16301 Due from other banks,2060.4
+2026-04-15,45405 Fee income,1837.9
+2026-04-16,10101 Settlement account,2738.0
+2026-04-16,10301 Correspondent account,-27317.1
+2026-04-16,16101 Clearing suspense,-55656.8
+2026-04-16,16103 Transit account,-109546.3
+2026-04-16,16301 Due from other banks,3863.5
+2026-04-16,45405 Fee income,1857.0
+2026-04-17,10101 Settlement account,5711.9
+2026-04-17,10301 Correspondent account,-24760.4
+2026-04-17,16101 Clearing suspense,-53796.6
+2026-04-17,16103 Transit account,-114363.2
+2026-04-17,16301 Due from other banks,3450.6
+2026-04-17,45405 Fee income,1860.6
+2026-04-18,10101 Settlement account,6915.5
+2026-04-18,10301 Correspondent account,-25296.3
+2026-04-18,16101 Clearing suspense,-52250.1
+2026-04-18,16103 Transit account,-107628.7
+2026-04-18,16301 Due from other banks,2848.9
+2026-04-18,45405 Fee income,2109.9
+2026-04-19,10101 Settlement account,7931.8
+2026-04-19,10301 Correspondent account,-25379.7
+2026-04-19,16101 Clearing suspense,-52708.4
+2026-04-19,16103 Transit account,-107029.9
+2026-04-19,16301 Due from other banks,2852.2
+2026-04-19,45405 Fee income,1995.3
+2026-04-20,10101 Settlement account,12551.2
+2026-04-20,10301 Correspondent account,-23906.7
+2026-04-20,16101 Clearing suspense,-58506.6
+2026-04-20,16103 Transit account,-112095.3
+2026-04-20,16301 Due from other banks,3199.3
+2026-04-20,45405 Fee income,2258.0
+2026-04-21,10101 Settlement account,13940.1
+2026-04-21,10301 Correspondent account,-26900.2
+2026-04-21,16101 Clearing suspense,-55454.8
+2026-04-21,16103 Transit account,-117928.8
+2026-04-21,16301 Due from other banks,2014.5
+2026-04-21,45405 Fee income,2098.5
+2026-04-22,10101 Settlement account,13416.1
+2026-04-22,10301 Correspondent account,-31152.6
+2026-04-22,16101 Clearing suspense,-52369.8
+2026-04-22,16103 Transit account,-128295.2
+2026-04-22,16301 Due from other banks,1661.0
+2026-04-22,45405 Fee income,2094.9
+2026-04-23,10101 Settlement account,4736.4
+2026-04-23,10301 Correspondent account,-29203.8
+2026-04-23,16101 Clearing suspense,-51898.2
+2026-04-23,16103 Transit account,-127923.0
+2026-04-23,16301 Due from other banks,2446.1
+2026-04-23,45405 Fee income,2129.1
+2026-04-24,10101 Settlement account,13079.7
+2026-04-24,10301 Correspondent account,-30561.3
+2026-04-24,16101 Clearing suspense,-51142.4
+2026-04-24,16103 Transit account,-122927.8
+2026-04-24,16301 Due from other banks,3617.9
+2026-04-24,45405 Fee income,1584.2
+2026-04-25,10101 Settlement account,3503.4
+2026-04-25,10301 Correspondent account,-32354.3
+2026-04-25,16101 Clearing suspense,-48996.8
+2026-04-25,16103 Transit account,-143756.7
+2026-04-25,16301 Due from other banks,2933.6
+2026-04-25,45405 Fee income,1827.9
+2026-04-26,10101 Settlement account,4437.9
+2026-04-26,10301 Correspondent account,-32596.9
+2026-04-26,16101 Clearing suspense,-49914.8
+2026-04-26,16103 Transit account,-143055.8
+2026-04-26,16301 Due from other banks,2762.9
+2026-04-26,45405 Fee income,1812.3
+2026-04-27,10101 Settlement account,11475.9
+2026-04-27,10301 Correspondent account,-28375.9
+2026-04-27,16101 Clearing suspense,-50798.9
+2026-04-27,16103 Transit account,-134950.4
+2026-04-27,16301 Due from other banks,3029.3
+2026-04-27,45405 Fee income,1812.1
+2026-04-28,10101 Settlement account,20423.0
+2026-04-28,10301 Correspondent account,-32926.2
+2026-04-28,16101 Clearing suspense,-50358.7
+2026-04-28,16103 Transit account,-137542.0
+2026-04-28,16301 Due from other banks,5688.1
+2026-04-28,45405 Fee income,2090.3
+2026-04-29,10101 Settlement account,23488.1
+2026-04-29,10301 Correspondent account,-26571.0
+2026-04-29,16101 Clearing suspense,-40523.1
+2026-04-29,16103 Transit account,-128523.9
+2026-04-29,16301 Due from other banks,4604.7
+2026-04-29,45405 Fee income,2116.2
+2026-04-30,10101 Settlement account,21338.5
+2026-04-30,10301 Correspondent account,-25032.6
+2026-04-30,16101 Clearing suspense,-46267.2
+2026-04-30,16103 Transit account,-125134.3
+2026-04-30,16301 Due from other banks,4288.3
+2026-04-30,45405 Fee income,2213.5
+2026-05-01,10101 Settlement account,16325.2
+2026-05-01,10301 Correspondent account,-31344.8
+2026-05-01,16101 Clearing suspense,-35979.0
+2026-05-01,16103 Transit account,-127532.4
+2026-05-01,16301 Due from other banks,4657.0
+2026-05-01,45405 Fee income,1817.1
+2026-05-02,10101 Settlement account,14648.5
+2026-05-02,10301 Correspondent account,-35871.8
+2026-05-02,16101 Clearing suspense,-22578.4
+2026-05-02,16103 Transit account,-142215.2
+2026-05-02,16301 Due from other banks,3247.1
+2026-05-02,45405 Fee income,1567.9
+2026-05-03,10101 Settlement account,16946.3
+2026-05-03,10301 Correspondent account,-36256.3
+2026-05-03,16101 Clearing suspense,-23380.6
+2026-05-03,16103 Transit account,-142281.1
+2026-05-03,16301 Due from other banks,3565.4
+2026-05-03,45405 Fee income,1659.7
+2026-05-04,10101 Settlement account,25896.1
+2026-05-04,10301 Correspondent account,-34859.8
+2026-05-04,16101 Clearing suspense,-33367.1
+2026-05-04,16103 Transit account,-147465.3
+2026-05-04,16301 Due from other banks,3337.6
+2026-05-04,45405 Fee income,1557.8
+2026-05-05,10101 Settlement account,21335.2
+2026-05-05,10301 Correspondent account,-38840.2
+2026-05-05,16101 Clearing suspense,-32520.5
+2026-05-05,16103 Transit account,-134144.2
+2026-05-05,16301 Due from other banks,4489.2
+2026-05-05,45405 Fee income,1082.2
+2026-05-06,10101 Settlement account,22755.1
+2026-05-06,10301 Correspondent account,-36898.3
+2026-05-06,16101 Clearing suspense,-38683.2
+2026-05-06,16103 Transit account,-119952.0
+2026-05-06,16301 Due from other banks,3448.0
+2026-05-06,45405 Fee income,1085.0
+2026-05-07,10101 Settlement account,22151.3
+2026-05-07,10301 Correspondent account,-38566.9
+2026-05-07,16101 Clearing suspense,-41219.1
+2026-05-07,16103 Transit account,-117888.6
+2026-05-07,16301 Due from other banks,4010.3
+2026-05-07,45405 Fee income,1243.7
+2026-05-08,10101 Settlement account,17605.3
+2026-05-08,10301 Correspondent account,-42234.2
+2026-05-08,16101 Clearing suspense,-48168.0
+2026-05-08,16103 Transit account,-122686.3
+2026-05-08,16301 Due from other banks,3106.5
+2026-05-08,45405 Fee income,429.5
+2026-05-09,10101 Settlement account,22670.3
+2026-05-09,10301 Correspondent account,-47876.0
+2026-05-09,16101 Clearing suspense,-42721.8
+2026-05-09,16103 Transit account,-132353.1
+2026-05-09,16301 Due from other banks,2332.9
+2026-05-09,45405 Fee income,196.3
+2026-05-10,10101 Settlement account,20344.9
+2026-05-10,10301 Correspondent account,-47049.9
+2026-05-10,16101 Clearing suspense,-41230.7
+2026-05-10,16103 Transit account,-133117.1
+2026-05-10,16301 Due from other banks,2267.3
+2026-05-10,45405 Fee income,247.0
+2026-05-11,10101 Settlement account,21687.9
+2026-05-11,10301 Correspondent account,-46234.8
+2026-05-11,16101 Clearing suspense,-40260.4
+2026-05-11,16103 Transit account,-124040.6
+2026-05-11,16301 Due from other banks,1366.7
+2026-05-11,45405 Fee income,233.6
+2026-05-12,10101 Settlement account,21270.5
+2026-05-12,10301 Correspondent account,-44728.1
+2026-05-12,16101 Clearing suspense,-42609.0
+2026-05-12,16103 Transit account,-134840.0
+2026-05-12,16301 Due from other banks,2065.0
+2026-05-12,45405 Fee income,268.3
+2026-05-13,10101 Settlement account,23214.5
+2026-05-13,10301 Correspondent account,-47832.8
+2026-05-13,16101 Clearing suspense,-36890.2
+2026-05-13,16103 Transit account,-132025.8
+2026-05-13,16301 Due from other banks,3175.9
+2026-05-13,45405 Fee income,449.3
+2026-05-14,10101 Settlement account,27430.7
+2026-05-14,10301 Correspondent account,-49161.9
+2026-05-14,16101 Clearing suspense,-34910.3
+2026-05-14,16103 Transit account,-142917.4
+2026-05-14,16301 Due from other banks,3268.6
+2026-05-14,45405 Fee income,739.7
+2026-05-15,10101 Settlement account,25056.2
+2026-05-15,10301 Correspondent account,-46823.5
+2026-05-15,16101 Clearing suspense,-34133.4
+2026-05-15,16103 Transit account,-144631.0
+2026-05-15,16301 Due from other banks,2288.3
+2026-05-15,45405 Fee income,955.0
+2026-05-16,10101 Settlement account,29121.6
+2026-05-16,10301 Correspondent account,-51659.3
+2026-05-16,16101 Clearing suspense,-29178.2
+2026-05-16,16103 Transit account,-162239.2
+2026-05-16,16301 Due from other banks,3946.1
+2026-05-16,45405 Fee income,1078.5
+2026-05-17,10101 Settlement account,28270.5
+2026-05-17,10301 Correspondent account,-52786.2
+2026-05-17,16101 Clearing suspense,-30200.5
+2026-05-17,16103 Transit account,-159565.0
+2026-05-17,16301 Due from other banks,3508.6
+2026-05-17,45405 Fee income,1047.7
+2026-05-18,10101 Settlement account,18959.5
+2026-05-18,10301 Correspondent account,-58158.5
+2026-05-18,16101 Clearing suspense,-34312.7
+2026-05-18,16103 Transit account,-149031.4
+2026-05-18,16301 Due from other banks,3022.8
+2026-05-18,45405 Fee income,1077.3
+2026-05-19,10101 Settlement account,21606.8
+2026-05-19,10301 Correspondent account,-58267.7
+2026-05-19,16101 Clearing suspense,-30224.2
+2026-05-19,16103 Transit account,-139400.0
+2026-05-19,16301 Due from other banks,4278.9
+2026-05-19,45405 Fee income,1131.8
+2026-05-20,10101 Settlement account,9298.7
+2026-05-20,10301 Correspondent account,-56442.6
+2026-05-20,16101 Clearing suspense,-36414.3
+2026-05-20,16103 Transit account,-155483.9
+2026-05-20,16301 Due from other banks,5041.2
+2026-05-20,45405 Fee income,1605.3
+2026-05-21,10101 Settlement account,5167.4
+2026-05-21,10301 Correspondent account,-60410.8
+2026-05-21,16101 Clearing suspense,-37623.0
+2026-05-21,16103 Transit account,-146700.5
+2026-05-21,16301 Due from other banks,4757.1
+2026-05-21,45405 Fee income,1693.1
+2026-05-22,10101 Settlement account,379.1
+2026-05-22,10301 Correspondent account,-62120.8
+2026-05-22,16101 Clearing suspense,-33093.5
+2026-05-22,16103 Transit account,-144356.4
+2026-05-22,16301 Due from other banks,5225.7
+2026-05-22,45405 Fee income,1543.9
+2026-05-23,10101 Settlement account,12128.5
+2026-05-23,10301 Correspondent account,-55212.5
+2026-05-23,16101 Clearing suspense,-37542.5
+2026-05-23,16103 Transit account,-138594.7
+2026-05-23,16301 Due from other banks,4852.3
+2026-05-23,45405 Fee income,1957.1
+2026-05-24,10101 Settlement account,13709.6
+2026-05-24,10301 Correspondent account,-55809.0
+2026-05-24,16101 Clearing suspense,-36849.7
+2026-05-24,16103 Transit account,-139682.8
+2026-05-24,16301 Due from other banks,4959.1
+2026-05-24,45405 Fee income,1839.3
+2026-05-25,10101 Settlement account,21844.1
+2026-05-25,10301 Correspondent account,-51563.3
+2026-05-25,16101 Clearing suspense,-34961.2
+2026-05-25,16103 Transit account,-140836.9
+2026-05-25,16301 Due from other banks,5016.9
+2026-05-25,45405 Fee income,1600.5
+2026-05-26,10101 Settlement account,22835.3
+2026-05-26,10301 Correspondent account,-55494.4
+2026-05-26,16101 Clearing suspense,-42559.3
+2026-05-26,16103 Transit account,-134911.3
+2026-05-26,16301 Due from other banks,4634.3
+2026-05-26,45405 Fee income,1913.4
+2026-05-27,10101 Settlement account,20929.1
+2026-05-27,10301 Correspondent account,-47906.3
+2026-05-27,16101 Clearing suspense,-38026.7
+2026-05-27,16103 Transit account,-143551.0
+2026-05-27,16301 Due from other banks,3571.9
+2026-05-27,45405 Fee income,1595.9
+2026-05-28,10101 Settlement account,12915.9
+2026-05-28,10301 Correspondent account,-45466.1
+2026-05-28,16101 Clearing suspense,-34825.1
+2026-05-28,16103 Transit account,-137590.3
+2026-05-28,16301 Due from other banks,4162.2
+2026-05-28,45405 Fee income,1868.8
+2026-05-29,10101 Settlement account,3107.6
+2026-05-29,10301 Correspondent account,-45163.8
+2026-05-29,16101 Clearing suspense,-33222.9
+2026-05-29,16103 Transit account,-136839.0
+2026-05-29,16301 Due from other banks,2792.3
+2026-05-29,45405 Fee income,2345.2
+2026-05-30,10101 Settlement account,7365.2
+2026-05-30,10301 Correspondent account,-45781.9
+2026-05-30,16101 Clearing suspense,-33844.5
+2026-05-30,16103 Transit account,-141963.6
+2026-05-30,16301 Due from other banks,3140.7
+2026-05-30,45405 Fee income,2494.2
+2026-05-31,10101 Settlement account,7784.0
+2026-05-31,10301 Correspondent account,-45137.9
+2026-05-31,16101 Clearing suspense,-33119.7
+2026-05-31,16103 Transit account,-144880.0
+2026-05-31,16301 Due from other banks,3524.3
+2026-05-31,45405 Fee income,2535.5
+2026-06-01,10101 Settlement account,7581.9
+2026-06-01,10301 Correspondent account,-48996.8
+2026-06-01,16101 Clearing suspense,-37937.3
+2026-06-01,16103 Transit account,-153333.4
+2026-06-01,16301 Due from other banks,4248.4
+2026-06-01,45405 Fee income,2356.3
+2026-06-02,10101 Settlement account,20259.3
+2026-06-02,10301 Correspondent account,-43950.3
+2026-06-02,16101 Clearing suspense,-30251.1
+2026-06-02,16103 Transit account,-148092.5
+2026-06-02,16301 Due from other banks,5107.6
+2026-06-02,45405 Fee income,2387.0
+2026-06-03,10101 Settlement account,19776.5
+2026-06-03,10301 Correspondent account,-46205.9
+2026-06-03,16101 Clearing suspense,-29666.2
+2026-06-03,16103 Transit account,-144582.0
+2026-06-03,16301 Due from other banks,4907.9
+2026-06-03,45405 Fee income,2098.1
+2026-06-04,10101 Settlement account,15173.4
+2026-06-04,10301 Correspondent account,-43786.3
+2026-06-04,16101 Clearing suspense,-35567.8
+2026-06-04,16103 Transit account,-124625.6
+2026-06-04,16301 Due from other banks,4388.9
+2026-06-04,45405 Fee income,1965.8
+2026-06-05,10101 Settlement account,17398.1
+2026-06-05,10301 Correspondent account,-42287.4
+2026-06-05,16101 Clearing suspense,-36782.8
+2026-06-05,16103 Transit account,-138792.2
+2026-06-05,16301 Due from other banks,4778.4
+2026-06-05,45405 Fee income,1988.4
+2026-06-06,10101 Settlement account,25487.5
+2026-06-06,10301 Correspondent account,-37021.8
+2026-06-06,16101 Clearing suspense,-37327.8
+2026-06-06,16103 Transit account,-132046.8
+2026-06-06,16301 Due from other banks,4735.4
+2026-06-06,45405 Fee income,1588.5
+2026-06-07,10101 Settlement account,26014.8
+2026-06-07,10301 Correspondent account,-37861.7
+2026-06-07,16101 Clearing suspense,-38347.1
+2026-06-07,16103 Transit account,-137543.2
+2026-06-07,16301 Due from other banks,4730.1
+2026-06-07,45405 Fee income,1628.9
+2026-06-08,10101 Settlement account,38243.0
+2026-06-08,10301 Correspondent account,-42001.3
+2026-06-08,16101 Clearing suspense,-41797.9
+2026-06-08,16103 Transit account,-137111.4
+2026-06-08,16301 Due from other banks,4189.6
+2026-06-08,45405 Fee income,1208.1
+2026-06-09,10101 Settlement account,42382.9
+2026-06-09,10301 Correspondent account,-36155.6
+2026-06-09,16101 Clearing suspense,-50749.6
+2026-06-09,16103 Transit account,-133598.1
+2026-06-09,16301 Due from other banks,3254.0
+2026-06-09,45405 Fee income,1048.5
+2026-06-10,10101 Settlement account,40360.1
+2026-06-10,10301 Correspondent account,-38652.1
+2026-06-10,16101 Clearing suspense,-50723.6
+2026-06-10,16103 Transit account,-137803.2
+2026-06-10,16301 Due from other banks,4825.3
+2026-06-10,45405 Fee income,1463.0
+2026-06-11,10101 Settlement account,42125.2
+2026-06-11,10301 Correspondent account,-37494.3
+2026-06-11,16101 Clearing suspense,-62166.5
+2026-06-11,16103 Transit account,-136891.1
+2026-06-11,16301 Due from other banks,6120.4
+2026-06-11,45405 Fee income,1062.5
+2026-06-12,10101 Settlement account,34531.2
+2026-06-12,10301 Correspondent account,-37868.4
+2026-06-12,16101 Clearing suspense,-69192.2
+2026-06-12,16103 Transit account,-155785.2
+2026-06-12,16301 Due from other banks,6518.0
+2026-06-12,45405 Fee income,763.4
+2026-06-13,10101 Settlement account,37850.0
+2026-06-13,10301 Correspondent account,-35598.8
+2026-06-13,16101 Clearing suspense,-64907.4
+2026-06-13,16103 Transit account,-157308.3
+2026-06-13,16301 Due from other banks,5020.9
+2026-06-13,45405 Fee income,884.0
+2026-06-14,10101 Settlement account,37963.6
+2026-06-14,10301 Correspondent account,-36765.5
+2026-06-14,16101 Clearing suspense,-64656.8
+2026-06-14,16103 Transit account,-154686.6
+2026-06-14,16301 Due from other banks,4685.7
+2026-06-14,45405 Fee income,899.5
+2026-06-15,10101 Settlement account,34862.1
+2026-06-15,10301 Correspondent account,-29205.7
+2026-06-15,16101 Clearing suspense,-66149.7
+2026-06-15,16103 Transit account,-150979.4
+2026-06-15,16301 Due from other banks,5016.7
+2026-06-15,45405 Fee income,1311.5
+2026-06-16,10101 Settlement account,18974.8
+2026-06-16,10301 Correspondent account,-29287.4
+2026-06-16,16101 Clearing suspense,-61267.1
+2026-06-16,16103 Transit account,-139380.4
+2026-06-16,16301 Due from other banks,6702.2
+2026-06-16,45405 Fee income,1305.5
+2026-06-17,10101 Settlement account,22337.1
+2026-06-17,10301 Correspondent account,-27032.9
+2026-06-17,16101 Clearing suspense,-61361.0
+2026-06-17,16103 Transit account,-144245.6
+2026-06-17,16301 Due from other banks,6362.4
+2026-06-17,45405 Fee income,1531.7
+2026-06-18,10101 Settlement account,29010.3
+2026-06-18,10301 Correspondent account,-25525.8
+2026-06-18,16101 Clearing suspense,-67463.0
+2026-06-18,16103 Transit account,-146291.3
+2026-06-18,16301 Due from other banks,6451.4
+2026-06-18,45405 Fee income,1603.9
+2026-06-19,10101 Settlement account,33770.5
+2026-06-19,10301 Correspondent account,-24803.8
+2026-06-19,16101 Clearing suspense,-69317.7
+2026-06-19,16103 Transit account,-140864.4
+2026-06-19,16301 Due from other banks,6411.4
+2026-06-19,45405 Fee income,1455.3
+2026-06-20,10101 Settlement account,37526.2
+2026-06-20,10301 Correspondent account,-25216.8
+2026-06-20,16101 Clearing suspense,-64215.0
+2026-06-20,16103 Transit account,-141806.1
+2026-06-20,16301 Due from other banks,5554.6
+2026-06-20,45405 Fee income,1516.5
+2026-06-21,10101 Settlement account,37070.6
+2026-06-21,10301 Correspondent account,-24954.4
+2026-06-21,16101 Clearing suspense,-62815.4
+2026-06-21,16103 Transit account,-139096.1
+2026-06-21,16301 Due from other banks,5287.6
+2026-06-21,45405 Fee income,1537.0
+2026-06-22,10101 Settlement account,34574.9
+2026-06-22,10301 Correspondent account,-28482.5
+2026-06-22,16101 Clearing suspense,-56632.8
+2026-06-22,16103 Transit account,-132903.8
+2026-06-22,16301 Due from other banks,6254.2
+2026-06-22,45405 Fee income,1655.7
+2026-06-23,10101 Settlement account,37212.0
+2026-06-23,10301 Correspondent account,-23766.4
+2026-06-23,16101 Clearing suspense,-53379.4
+2026-06-23,16103 Transit account,-145929.1
+2026-06-23,16301 Due from other banks,5609.0
+2026-06-23,45405 Fee income,1830.2
+2026-06-24,10101 Settlement account,39573.0
+2026-06-24,10301 Correspondent account,-20872.3
+2026-06-24,16101 Clearing suspense,-53438.4
+2026-06-24,16103 Transit account,-150950.6
+2026-06-24,16301 Due from other banks,6529.5
+2026-06-24,45405 Fee income,2122.7
+2026-06-25,10101 Settlement account,51795.4
+2026-06-25,10301 Correspondent account,-19522.8
+2026-06-25,16101 Clearing suspense,-56204.6
+2026-06-25,16103 Transit account,-171874.7
+2026-06-25,16301 Due from other banks,6442.2
+2026-06-25,45405 Fee income,2786.9
+2026-06-26,10101 Settlement account,53573.5
+2026-06-26,10301 Correspondent account,-15027.3
+2026-06-26,16101 Clearing suspense,-50001.9
+2026-06-26,16103 Transit account,-160747.9
+2026-06-26,16301 Due from other banks,8223.4
+2026-06-26,45405 Fee income,3093.0
+2026-06-27,10101 Settlement account,48266.8
+2026-06-27,10301 Correspondent account,-11624.6
+2026-06-27,16101 Clearing suspense,-46898.0
+2026-06-27,16103 Transit account,-167436.9
+2026-06-27,16301 Due from other banks,7747.8
+2026-06-27,45405 Fee income,3494.0
+2026-06-28,10101 Settlement account,46309.2
+2026-06-28,10301 Correspondent account,-9194.3
+2026-06-28,16101 Clearing suspense,-46444.8
+2026-06-28,16103 Transit account,-163461.4
+2026-06-28,16301 Due from other banks,7484.1
+2026-06-28,45405 Fee income,3444.6
+2026-06-29,10101 Settlement account,50023.4
+2026-06-29,10301 Correspondent account,-13668.8
+2026-06-29,16101 Clearing suspense,-48741.0
+2026-06-29,16103 Transit account,-158697.4
+2026-06-29,16301 Due from other banks,7525.7
+2026-06-29,45405 Fee income,3671.6
+2026-06-30,10101 Settlement account,43839.9
+2026-06-30,10301 Correspondent account,-15338.9
+2026-06-30,16101 Clearing suspense,-55434.1
+2026-06-30,16103 Transit account,-170857.4
+2026-06-30,16301 Due from other banks,7148.1
+2026-06-30,45405 Fee income,3712.9
